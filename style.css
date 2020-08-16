@@ -15,53 +15,48 @@ html {
 #root {
  min-height: 100vh;
  background-color: white;
- margin: 3rem 5vw;
  /* width: 100vw; */
 
+}
+
+nav {
+  align-self: flex-end;
+  background-color: black;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav > ul {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
 }
 
 
 
 /* HEADER (hero section) */
-.outer-header-wrapper {
-  display: flex;
-  flex-direction: column;
-  background-color: #C4C4C4;
-  height: 111vh;
-  clip-path: polygon(-80% 0%, 100% -1%, 100% 100%, 102% 100%);
-  padding-bottom: 6rem;
-}
 
 header {
   display: flex;
   flex-direction: column;
   flex: 20%;
-  background-color: black;
+  /* background-color: black; */
   height: 98vh;
-  clip-path: polygon(-60% 0%, 100% -1%, 100% 100%, 100% 100%);
+  /* clip-path: polygon(-30% 0%, 100% -1%, 100% 100%, 114% 111%); */
   padding: 4rem;
-}
-
-
-
-.inner-header-wrapper {
-  display: flex;
-  flex-direction: column;
-  background-color: #4F574D;
-  height: 109vh;
-  clip-path: polygon(-72% 0%, 100% -1%, 100% 100%, 104% 100%);
-  padding-bottom: 6rem;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(189deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 46%, rgba(255, 255, 255, 1) 46.2%);
+ 
 }
 
 .introduction {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 8rem;
 }
 
 .greeting1 {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 .call-to-action {
@@ -72,10 +67,29 @@ header {
   font-size: 3rem;
 }
 
+.profile-pic {
+  height: 15rem;
+  width: 15rem;
+  position: absolute;
+  /* transform: translateX(144%); */
+  left: 35%;
+  top: 31%;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.profile-pic > img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.75);
+  padding: 5px;
+}
+
 .nav-options {
   display: flex;
   justify-content: center;
-  margin-top: 5rem;
+  min-height: 13rem;
 }
 
 .main-btn {
@@ -84,6 +98,8 @@ header {
   font-size: 2rem;
   background-color: black;
   color: white;
+  box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.75);
+
 }
 
 button:hover,
@@ -94,6 +110,38 @@ button:focus {
 }
 
 /* MAIN CONTENT */
+
+.about-cta{
+  background-color: white;
+  height: 29vh;
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin-top: -21rem;
+  text-align: center;
+}
+
+.about-cta > p {
+  width: 50%;
+  font-size: 1.8rem;
+  color: grey;
+}
+
+.about {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about > p {
+  font-size: 1.8rem;
+  width: 33%;
+}
+
+
+
+
+
 
 hr {
   border: 2px solid #C4C4C4;
@@ -145,7 +193,9 @@ hr {
   color: white;
 }
 
-
+.ruby {
+  background-color: red;
+}
 
 
 .cards-container {
@@ -221,12 +271,59 @@ hr {
 .contact {
   background-color: black;
   padding: 4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  clip-path: polygon(-31% -11%, -100% 100%, 77% 100%, 122% 43%);
+  /* clip-path: polygon(-31% -11%, -100% 100%, 77% 100%, 122% 43%); */
   min-height: 111vh;
+  /* clip-path: polygon(-823% 176%, 155% -10%, 100% 112%, 201% 94%); */
+  margin-top: 6rem;
 
+}
+
+/* DIAGRAMA */
+.diagram {
+  display: grid;
+  grid-template-columns: repeat(5, 2rem);
+  grid-template-rows: repeat(5, 3rem);
+  position: relative;
+  top: 10rem;
+}
+
+.milestones {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+}
+
+.white {
+  background-color: white;
+}
+
+.grey {
+  background-color: grey;
+}
+
+.grey-one {
+  grid-column: 5;
+  grid-row: 1;
+}
+
+.white-one {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.grey-two {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.white-two {
+  grid-column: 1;
+  grid-row: 4;
+}
+
+.grey-three {
+  grid-column: 2;
+  grid-row: 5;
 }
 
 .contact form {
@@ -275,4 +372,22 @@ footer i {
 
 footer i:hover {
   color: #4F574D;
+}
+
+/* HELPERS */
+
+.hidden {
+  display: none;
+}
+
+
+/* SVG STYLES */
+
+.white-circle {
+  fill: #ffffff;
+  stroke-width: 0.26458332;
+}
+
+.white-circle:hover {
+  fill: blue;
 }
