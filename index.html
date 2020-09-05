@@ -11,9 +11,13 @@
 </head>
 <body>
   <div id="root">
-          <nav class="up-sticky-btn">
-            <i class="fab fa-github"></i>
-            <i class="fab fa-linkedin"></i>
+          <nav class="up-sticky-nav">
+            <ul>
+              <li><a href="#more-about-me">Sobre mí</a></li>
+              <li><a href="#skills">Habilidades</a></li>
+              <li><a href="#work">Mi trabajo</a></li>
+              <li><a href="#contact-form">Contáctame</a></li>
+            </ul>
           </nav>
           <header>
             <section class="introduction">
@@ -34,11 +38,11 @@
               </p>
             <!-- </section> -->
           </article>
-          <article class="nav-options">
+         <!--  <article class="nav-options">
             <div class="options">
               <button class="main-btn">Conoce más de mí</button>
             </div>
-          </article>
+          </article> -->
         
        <!-- <section class="portfolio">
          <div class="portfolio-content">
@@ -493,39 +497,44 @@
 
             
            <article id="skills" class="skills">
-             <div>
+             <nav class="skills-navbar">
                <h2>Base sólida</h2>
-               <ul>
-                 <li>HTML5</li>
-                 <li>CSS3</li>
-                 <li>Vanilla Javascript</li>
-                 <li>React (Router, Redux)</li>
-                 <li>Firebase</li>
-                 <li>Figma</li>
-                 <li>Git y GitHub</li>
-                 <li>Ubuntu y la terminal</li>
-               </ul>
-             </div>
-             <div>
                <h2>Nociones</h2>
-               <ul>
-                 <li>Node</li>
-                 <li>Express</li>
-                 <li>MongoDB</li>
-                 <li>PostgreSQL</li>
-                 <li>Ruby On Rails</li>
-               </ul>
-             </div>
-             <div>
                <h2>Interés</h2>
-               <ul>
-                 <li>Desarrollo back-end</li>
-                 <li>Node, Express, MongoDB</li>
-                 <li></li>
-                 <li></li>
-                 <li></li>
-               </ul>
-             </div>
+             </nav>
+             <section class="skills-content">
+              <div>
+                <ul class="">
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>Vanilla Javascript</li>
+                  <li>React (Router, Redux)</li>
+                  <li>Firebase</li>
+                  <li>Figma</li>
+                  <li>Git y GitHub</li>
+                  <li>Ubuntu y la terminal</li>
+                </ul>
+              </div>
+              <div class="hidden">
+                <ul class="hidden">
+                  <li>Node</li>
+                  <li>Express</li>
+                  <li>MongoDB</li>
+                  <li>PostgreSQL</li>
+                  <li>Ruby On Rails</li>
+                </ul>
+              </div>
+              <div class="hidden">
+                <ul class="hidden">
+                  <li>Desarrollo back-end</li>
+                  <li>Node, Express, MongoDB</li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div>
+             </section>
+             
              
            </article>
            <article id="work" class="work">

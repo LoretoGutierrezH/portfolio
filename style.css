@@ -18,23 +18,36 @@ html {
 
 }
 
-nav {
-  background-color: black;
+
+.up-sticky-nav {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  position: fixed;
+  z-index: 1000;
+  width: 100vw;
+  margin-top: -6rem;
   height: 10vh;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: black;
+
 }
 
-nav > ul {
+.up-sticky-nav > ul {
   display: flex;
   list-style: none;
   justify-content: space-evenly;
+
 }
 
-nav > ul > li {
-  margin: 0 2rem;
+.up-sticky-nav > ul > li {
+  margin: 0 1rem;
 }
+
+nav > ul > li > a {
+  text-decoration: none;
+  color: white;
+}
+
 
 
 
@@ -282,18 +295,6 @@ hr {
   margin: 0 auto;
 }
 
-.up-sticky-btn {
-  display: flex;
-  justify-content: flex-end;
-  position: fixed;
-  z-index: 1000;
-  width: 100vw;
-  margin-top: -6rem;
-}
-
-.up-sticky-btn > i {
-  width: 2rem;
-}
 
 /* SVG STYLES */
 
