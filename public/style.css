@@ -120,8 +120,8 @@ header {
 
 }
 
-button:hover,
-button:focus {
+input[type="button"]:hover,
+input[type="button"]:focus {
   background-color: grey;
   border: none;
   offset: none;
@@ -191,6 +191,9 @@ button:focus {
   background-color: red;
   margin: 0 1rem;
   animation: 1s ease-out 0s 1 slideInFromLeft;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
@@ -201,22 +204,33 @@ button:focus {
 /* SKILLS SECTION */
 .skills {
   display: flex;
-  justify-content: space-evenly;
+  flex-flow: column;
   margin: 3rem;
+  position: relative;
+  min-height: 20rem;
 }
 
-.skills > div {
-  animation: 1s ease-out 0s 1 slideInFromLeft;
+.skills-navbar {
+  position: absolute;
+  top: -2rem;
+  display: flex;
+  left: 2rem;
 }
 
-.skills > div > ul {
+.skills-navbar > p {
+  margin: 0 1rem;
+}
+
+.skills-content {
+  position: absolute;
+  top: 1rem;
+  left: 5rem;
+}
+
+.skills-content div > ul {
   list-style: none;
 }
 
-.skills > div > ul > li {
-  padding: 1rem 0;
-  width: 60%;
-}
 /* CONTACT FORM */
 .contact {
   background-color: black;
@@ -258,7 +272,7 @@ button:focus {
 footer {
   background-color: black;
   display: flex;
-  justify-content: center;
+  flex-flow: column;
   padding: 4rem;
   border-top: 3px solid #706C6C;
   font-size: 3rem;
@@ -276,6 +290,10 @@ footer i:hover {
 
 .hidden {
   display: none;
+}
+
+.active {
+  display: block;
 }
 
 @keyframes slideInFromLeft {

@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap"
     rel="stylesheet">
   <script src="https://kit.fontawesome.com/7406bf6020.js" crossorigin="anonymous"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <title>Loreto G.-Front-End</title>
 </head>
 <body>
@@ -498,9 +499,9 @@
             
            <article id="skills" class="skills">
              <nav class="skills-navbar">
-               <h2>Base sólida</h2>
-               <h2>Nociones</h2>
-               <h2>Interés</h2>
+               <p>Base sólida</p>
+               <p>Nociones</p>
+               <p>Interés</p>
              </nav>
              <section class="skills-content">
               <div>
@@ -516,7 +517,7 @@
                 </ul>
               </div>
               <div class="hidden">
-                <ul class="hidden">
+                <ul>
                   <li>Node</li>
                   <li>Express</li>
                   <li>MongoDB</li>
@@ -525,7 +526,7 @@
                 </ul>
               </div>
               <div class="hidden">
-                <ul class="hidden">
+                <ul>
                   <li>Desarrollo back-end</li>
                   <li>Node, Express, MongoDB</li>
                   <li></li>
@@ -548,20 +549,24 @@
                  aut culpa numquam nam!</p>
             </section>
             <section class="work-content-cards">
-              <div class="card">Paw Lovers</div>
+              <div class="card">
+                <button>Más</button>
+              </div>
               <div class="card">Japan Queen</div>
               <div class="card">Shopping Cart</div>
             </section>
            </article>
-           <article id="contact-form" class="contact">
+           <article id="contact" class="contact">
            <hr>
 
-             <form action="">
+             <form id="contact-form" action="">
                <h1>Escríbeme</h1>
-               <input id="name" type="text" placeholder="Nombre"><br>
-               <input id="email" type="text" placeholder="Correo electrónico"><br>
-               <textarea id="content" type="text" placeholder="Escribe aquí..."></textarea><br>
-               <button class="send-btn">Enviar</button>
+               <div class="g-recaptcha" data-sitekey="6LdsfMkZAAAAAMTXw5fDxe_r12htv-jw-zRBQdC6"></div>
+               <!-- <input type="hidden" name="contact_number"> -->
+               <input name="user_name" type="text" placeholder="Nombre"><br>
+               <input name="user_email" type="text" placeholder="Correo electrónico"><br>
+               <textarea name="message" type="text" placeholder="Escribe aquí..."></textarea><br>
+               <button type="submit" class="send-btn">Enviar</button>
              </form>
            </article>
           </main>
@@ -570,11 +575,40 @@
       
 
     <footer>
+        <h5>Creado con HTML5, CSS3 y Vanilla JS</h5>
         <i class="fab fa-github"></i>
         <i class="fab fa-linkedin"></i>
     </footer>
   </div>
   
   <script src="script.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+    emailjs.init("user_iuRRBJ90PGHW6S5mCoigV");
+    })();
+    </script>
+    <script src="contactForm.js"></script>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCWCy26KfTNlWprGfvBRoIevnVhZAya9vY",
+    authDomain: "loreto-gutierrez.firebaseapp.com",
+    databaseURL: "https://loreto-gutierrez.firebaseio.com",
+    projectId: "loreto-gutierrez",
+    storageBucket: "loreto-gutierrez.appspot.com",
+    messagingSenderId: "1071620114498",
+    appId: "1:1071620114498:web:2f4aba11052f59c37905db"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
 </body>
 </html>
