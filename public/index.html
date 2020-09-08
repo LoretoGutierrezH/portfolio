@@ -2,8 +2,11 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" type="text/html">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="./css/style.css">
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap"
+     rel="stylesheet">
   <!-- update the version number as needed -->
   <script defer src="/__/firebase/7.19.1/firebase-app.js"></script>
   <!-- include only the Firebase features as you need -->
@@ -13,9 +16,7 @@
   <script defer src="/__/firebase/7.19.1/firebase-storage.js"></script>
   <!-- initialize the SDK after all desired features are loaded -->
   <script defer src="/__/firebase/init.js"></script>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap"
-    rel="stylesheet">
+ 
   <script src="https://kit.fontawesome.com/7406bf6020.js" crossorigin="anonymous"></script>
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <title>Loreto G.-Front-End</title>
@@ -37,7 +38,7 @@
         <!-- <p class="call-to-action">Conoce mi trabajo y el valor<br>que puedo aportar a tu equipo</p> -->
       </section>
       <section class="profile-pic">
-        <img src="./portafolio-assets/profile_pic.jpeg" alt="">
+        <img src="./assets/profile_pic.jpeg" alt="">
       </section>
     </header>
 
@@ -577,6 +578,7 @@
           <textarea name="message" type="text" placeholder="Escribe aquí..."></textarea><br>
           <button type="submit" class="send-btn">Enviar</button>
         </form>
+        <p class="form-action-message"></p>
       </article>
     </main>
     <!-- </div>

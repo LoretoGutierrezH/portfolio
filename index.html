@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap"
-    rel="stylesheet">
   <script src="https://kit.fontawesome.com/7406bf6020.js" crossorigin="anonymous"></script>
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <title>Loreto G.-Front-End</title>
+  <link rel="stylesheet" content-type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap"
+    rel="stylesheet">
 </head>
 <body>
   <div id="root">
@@ -26,7 +26,7 @@
               <!-- <p class="call-to-action">Conoce mi trabajo y el valor<br>que puedo aportar a tu equipo</p> -->
             </section>
             <section class="profile-pic">
-              <img src="./portafolio-assets/profile_pic.jpeg" alt="">
+              <img src="./portfolio-assets/profile_pic.jpeg" alt="">
             </section>
           </header>
 
@@ -561,13 +561,13 @@
 
              <form id="contact-form" action="">
                <h1>Escríbeme</h1>
-               <div class="g-recaptcha" data-sitekey="6LdsfMkZAAAAAMTXw5fDxe_r12htv-jw-zRBQdC6"></div>
-               <!-- <input type="hidden" name="contact_number"> -->
-               <input name="user_name" type="text" placeholder="Nombre"><br>
-               <input name="user_email" type="text" placeholder="Correo electrónico"><br>
-               <textarea name="message" type="text" placeholder="Escribe aquí..."></textarea><br>
+               <!-- <div class="g-recaptcha" data-sitekey="6LdsfMkZAAAAAMTXw5fDxe_r12htv-jw-zRBQdC6"></div> -->
+               <input name="user_name" type="text" placeholder="Nombre" required><br>
+               <input name="user_email" type="text" placeholder="Correo electrónico" required><br>
+               <textarea name="message" type="text" placeholder="Escribe aquí..." required></textarea><br>
                <button type="submit" class="send-btn">Enviar</button>
              </form>
+             <p class="form-action-message"></p>
            </article>
           </main>
         <!-- </div>
