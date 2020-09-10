@@ -1,6 +1,8 @@
 window.onload = function() {
-  const contactForm = document.querySelector('#contact-form');
+  console.log('función de formulario iniciada');
+  const contactForm = document.querySelector('#contact-form-client');
   const formActionMessage = document.querySelector('.form-action-message');
+  console.log(contactForm, formActionMessage)
   contactForm.addEventListener('submit', (event) => {
     event.preventDefault();
     /* this.contact_number.value = Math.random() * 1000 | 0; */

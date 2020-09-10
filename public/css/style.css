@@ -16,7 +16,7 @@ html {
 #root {
   min-height: 100vh;
   background-color: white;
-  /* width: 100vw; */
+  width: 100vw;
 
 }
 
@@ -27,42 +27,30 @@ html {
   z-index: 1000;
   width: 100vw;
   margin-top: -6rem;
-  height: 10vh;
+  height: 9vh;
   align-items: center;
   justify-content: space-evenly;
   background-color: black;
   border-bottom: 1px solid white;
 
 }
-
-.up-sticky-nav>ul {
-  display: flex;
-  list-style: none;
-  justify-content: space-evenly;
-  height: 100%;
-  align-items: center;
-
+.up-sticky-nav>p {
+  padding: 1.8rem 1rem;
+  margin: 0 -3rem;
 }
 
-.up-sticky-nav>ul>li {
-  height: 100%;
-  width: 12rem;
-  text-align: center;
-  padding-top: 2rem;
-}
-
-.up-sticky-nav>ul>li>a {
-  padding: 2rem;
-}
-
-.up-sticky-nav>ul>li:hover {
+.up-sticky-nav > p:hover {
   background-color: grey;
-  width: 12rem;
-  text-align: center;
-  padding-top: 2rem;
 }
 
-nav>ul>li>a {
+.up-sticky-nav > p > a {
+  padding: 1.8rem 0rem;
+}
+
+
+
+
+nav>p>a {
   text-decoration: none;
   color: white;
 }
@@ -84,6 +72,9 @@ header {
   background: rgb(0, 0, 0);
   background: linear-gradient(189deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 46%, rgba(255, 255, 255, 1) 46.2%);
   margin-top: 6rem;
+  width: 100vw;
+  position: relative;
+  top: -5rem;
 }
 
 .introduction {
@@ -100,20 +91,18 @@ header {
 
 .greeting2 {
   margin-top: 5rem;
-  width: 56vw;
-  margin-left: 1rem;
   font-size: 2rem;
 }
 
 .profile-pic {
-  height: 15rem;
-  width: 15rem;
+  width: 12rem;
   position: absolute;
   /* transform: translateX(144%); */
-  left: 35%;
-  top: 43%;
+  left: 34%;
+  top: 33%;
   border-radius: 50%;
   background-color: white;
+
 }
 
 .profile-pic>img {
@@ -145,9 +134,10 @@ header {
 }
 
 .about-cta>p {
-  width: 50%;
+  width: 59%;
   font-size: 1.8rem;
   color: grey;
+  z-index: 800;
 }
 
 .about {
@@ -164,17 +154,26 @@ header {
   font-size: 1.7rem;
   margin-left: 9rem;
   margin-right: 9rem;
+  width: 50%;
 }
 
 .about>section>p {
   font-size: 1.1rem;
-  margin: 0 4rem;
+  /* margin: 0 4rem; */
   position: absolute;
-  top: 61rem;
-  left: 15rem;
-  border: 1px solid white;
-  padding: 2rem;
-  height: 15rem;
+  top: 35rem;
+  left: 14rem;
+  padding: 1rem;
+  height: 16rem;
+  width: 19rem;
+}
+
+#mobile-svg {
+  margin-left: -2rem;
+}
+
+.svg-text {
+  font-size: 4rem;
 }
 
 .about>section {
@@ -201,7 +200,6 @@ header {
 .card {
   width: 80vw;
   margin: 1rem;
-  animation: 1s ease-out 0s 1 slideInFromLeft;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -227,15 +225,11 @@ header {
   background-color: #F7F0E9;
 }
 
-.work-content-intro>h3 {
-  animation: 1s ease-out 0s 1 slideInFromLeft;
-}
-
 /* SKILLS SECTION */
 .skills {
   display: flex;
   flex-flow: column;
-  margin: 4rem 3rem;
+  margin: 4rem 0rem;
   margin-bottom: 2rem;
   position: relative;
   min-height: 20rem;
@@ -260,7 +254,7 @@ h3.skills-heading {
   height: 3rem;
   background-color: grey;
   align-items: center;
-  width: 75vw;
+  width: 86vw;
   justify-content: space-between;
   font-weight: bold;
 }
@@ -323,7 +317,7 @@ h3.skills-heading {
 .skills-outline {
   display: flex;
   justify-content: space-around;
-  margin-left: -2rem;
+  margin-left: 1rem;
   margin-right: 8rem;
 }
 
@@ -346,13 +340,15 @@ h3.skills-heading {
   width: 95%;
 }
 
-#strong-basics-option {}
+
 
 /* CONTACT FORM */
 .contact {
   background-color: black;
-  min-height: 111vh;
+  min-height: 56vh;
   margin-top: 6rem;
+  width: 100vw;
+  padding-bottom: 2rem;
 
 }
 
@@ -390,6 +386,13 @@ form>h3 {
   font-size: 1.7rem;
 }
 
+.form-action-message {
+  width: 50vw;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.3rem;
+}
+
 footer {
   background-color: black;
   display: flex;
@@ -400,6 +403,7 @@ footer {
   font-size: 1.5rem;
   align-items: center;
   margin-top: 0rem;
+  width: 100vw;
 }
 
 footer i {
@@ -430,6 +434,10 @@ footer i:hover {
   justify-content: space-evenly;
 }
 
+.active-svg {
+  display: block;
+}
+
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(-100%);
@@ -443,7 +451,7 @@ footer i:hover {
 /* ACCESORIES */
 
 hr {
-  width: 80vw;
+  width: 92vw;
   margin: 0 auto;
 }
 
@@ -549,7 +557,6 @@ hr {
 
   .card {
     width: 20vw;
-    animation: 1s ease-out 0s 1 slideInFromLeft;
     display: flex;
     justify-content: center;
     align-items: center;

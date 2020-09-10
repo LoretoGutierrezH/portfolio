@@ -1,5 +1,5 @@
 window.onload = function () {
-  const contactForm = document.querySelector('#contact-form');
+  const contactForm = document.querySelector('#contact-form-client');
   const formActionMessage = document.querySelector('.form-action-message');
   contactForm.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -14,6 +14,9 @@ window.onload = function () {
         error.status === 400 ? formActionMessage.textContent = 'Si ves este mensaje es porque hubo un problema durante el envío del formulario web. Por favor, envíame un correo directamente a loretocgh@gmail.com y te responderé cuanto antes :)' : "";
       });
     event.target.reset();
+    setTimeout(() => {
+      formActionMessage.classList.add('hidden');
+    }, 10000)
 
   })
 }

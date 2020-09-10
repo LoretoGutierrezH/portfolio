@@ -3,8 +3,7 @@ const viewPortWidth = document.documentElement.clientWidth;
 const desktopSVG = document.querySelector('#desktop-svg');
 const mobileSVG = document.querySelector('#mobile-svg');
 
-
-if (viewPortWidth > 375) {
+if (viewPortWidth > 425) {
   desktopSVG.classList.replace('hidden', 'active-svg');
   mobileSVG.classList.add('hidden');
 } else {

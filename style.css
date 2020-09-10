@@ -17,7 +17,7 @@ html {
   min-height: 100vh;
   background-color: white;
   width: 100vw;
-
+  
 }
 
 
@@ -27,7 +27,7 @@ html {
   z-index: 1000;
   width: 100vw;
   margin-top: -6rem;
-  height: 10vh;
+  height: 12vh;
   align-items: center;
   justify-content: space-evenly;
   background-color: black;
@@ -41,15 +41,18 @@ html {
   justify-content: space-evenly;
   height: 100%;
   align-items: center;
-
+  width: 100vw;
+  margin-left: -9rem;
 }
 
 .up-sticky-nav>ul>li {
   height: 100%;
-  width: 0rem;
+  width: 11rem;
   text-align: center;
   padding-top: 2rem;
+  margin-left: -4rem;
 }
+
 
 .up-sticky-nav > ul > li > a {
   padding: 2rem;
@@ -101,20 +104,18 @@ header {
 
 .greeting2 {
   margin-top: 5rem;
-  width: 56vw;
-  margin-left: 1rem;
   font-size: 2rem;
 }
 
 .profile-pic {
-  height: 15rem;
-  width: 15rem;
+  width: 12rem;
   position: absolute;
   /* transform: translateX(144%); */
-  left: 35%;
-  top: 43%;
+  left: 34%;
+  top: 45%;
   border-radius: 50%;
   background-color: white;
+      
 }
 
 .profile-pic>img {
@@ -137,7 +138,7 @@ header {
 .about-cta {
   background-color: white;
   height: 29vh;
-  width: 63%;
+  width: 100%;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
@@ -146,7 +147,7 @@ header {
 }
 
 .about-cta>p {
-  width: 50%;
+  width: 59%;
   font-size: 1.8rem;
   color: grey;
 }
@@ -170,13 +171,22 @@ header {
 
 .about>section>p {
   font-size: 1.1rem;
-  margin: 0 4rem;
+  /* margin: 0 4rem; */
   position: absolute;
-  top: 61rem;
+  top: 35rem;
   left: 15rem;
   border: 1px solid white;
-  padding: 2rem;
-  height: 15rem;
+  padding: 1rem;
+  height: 16rem;
+  width: 19rem;
+}
+
+#mobile-svg {
+  margin-left: -1rem;
+}
+
+.svg-text {
+  font-size: 4rem;
 }
 
 .about>section {
@@ -235,12 +245,12 @@ header {
 
 /* SKILLS SECTION */
 .skills {
-  display: flex;
-  flex-flow: column;
-  margin: 4rem 3rem;
-  margin-bottom: 2rem;
-  position: relative;
-  min-height: 20rem;
+ display: flex;
+ flex-flow: column;
+ margin: 4rem 0rem;
+ margin-bottom: 2rem;
+ position: relative;
+ min-height: 20rem;
 }
 
 hr#skills {
@@ -255,16 +265,16 @@ h3.skills-heading {
 }
 
 .skills-navbar {
-    position: absolute;
-    top: -2rem;
-    display: flex;
-    left: 2rem;
-    height: 3rem;
-    background-color: grey;
-    align-items: center;
-    width: 75vw;
-    justify-content: space-between;
-    font-weight: bold;
+  position: absolute;
+  top: -2rem;
+  display: flex;
+  left: 2rem;
+  height: 3rem;
+  background-color: grey;
+  align-items: center;
+  width: 86vw;
+  justify-content: space-between;
+  font-weight: bold;
   }
 
   .skills-navbar > p {
@@ -325,7 +335,7 @@ h3.skills-heading {
   .skills-outline {
     display: flex;
     justify-content: space-around;
-    margin-left: -2rem;
+    margin-left: 1rem;
     margin-right: 8rem;
   }
 
@@ -348,16 +358,15 @@ h3.skills-heading {
     width: 95%;
   }
 
-  #strong-basics-option {
-    
-  }
+
 
 /* CONTACT FORM */
 .contact {
   background-color: black;
-  min-height: 111vh;
+  min-height: 56vh;
   margin-top: 6rem;
   width: 100vw;
+  padding-bottom: 2rem;
 
 }
 
@@ -436,6 +445,10 @@ footer i:hover {
   justify-content: space-evenly;
 }
 
+.active-svg {
+  display: block;
+}
+
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(-100%);
@@ -449,7 +462,7 @@ footer i:hover {
 /* ACCESORIES */
 
 hr {
-  width: 80vw;
+  width: 92vw;
   margin: 0 auto;
 }
 
