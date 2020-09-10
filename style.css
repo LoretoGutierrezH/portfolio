@@ -169,10 +169,11 @@ input[type="button"]:focus {
   font-size: 1.1rem;
   margin: 0 4rem;
   position: absolute;
-  top: 58rem;
-  left: 20rem;
+  top: 61rem;
+  left: 15rem;
   border: 1px solid white;
   padding: 2rem;
+  height: 15rem;
 }
 
 .about>section {
@@ -288,7 +289,6 @@ input[type="button"]:focus {
 
   .skills-content {
     width: 75vw;
-    background-color: #4F574D;
     position: relative;
     left: 2rem;
     min-height: 28rem;
@@ -304,9 +304,26 @@ input[type="button"]:focus {
     margin-left: -3rem;
   }
 
+  .skills-outline {
+    display: flex;
+    justify-content: space-around;
+    margin-left: -2rem;
+    margin-right: 8rem;
+  }
+
+  .javascript-img-container {
+    width: 5rem;
+    align-self: center;
+  }
+
+  .javascript-img-container > img {
+    width: 100%;
+  }
+
   .competency-description {
-    width: 43vw;
+    width: 67vw;
     margin-right: 1rem;
+    margin-top: 4rem;
   }
 
   .competency-description > p {
@@ -391,7 +408,7 @@ footer i:hover {
 
 .active {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
 }
 

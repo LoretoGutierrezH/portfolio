@@ -14,7 +14,7 @@ translationCircle.addEventListener('click', () => {
   developmentCircle.classList.remove('active-svg-circle');
 
   contentParagraph.textContent = "";
-  contentParagraph.textContent = "Soy traductora inglés-español de profesión, pero hace algún tiempo tomé la decisión de cambiar radicalmente de rubro, esta vez al área de la tecnología.Poseo una base sólida de HTML5, CSS3, Vanilla Javascript y React, y me interesan tanto las tecnologías de Front - End como las de Back - End.A nivel personal, soy adicta al ceviche, me encantan los libros, las películas, los animales y la naturaleza y tengo un lazo inquebrantable con mi taza de café";
+  contentParagraph.textContent = "Soy traductora inglés-español de profesión, pero ahora estoy totalmente enfocada en la programación. Poseo una base sólida de HTML5, CSS3, Vanilla Javascript y React, y me interesan tanto las tecnologías de Front-End como las de Back-End.";
 })
 
 rubyCircle.addEventListener('click', () => {
@@ -24,7 +24,7 @@ rubyCircle.addEventListener('click', () => {
   laboratoriaCircle.classList.remove('active-svg-circle');
   developmentCircle.classList.remove('active-svg-circle');
   contentParagraph.textContent = "";
-  contentParagraph.textContent = "Información sobre bootcamp Ruby on Rails";
+  contentParagraph.textContent = "Durante el 2019 participé de un bootcamp de desarrollo full-stack, en el que aprendí bastante de programación y desarrollo a nivel global, además de aprender a trabajar con Ruby on Rails.";
 })
 
 udemyCircle.addEventListener('click', () => {
@@ -34,7 +34,7 @@ udemyCircle.addEventListener('click', () => {
   laboratoriaCircle.classList.remove('active-svg-circle');
   developmentCircle.classList.remove('active-svg-circle');
   contentParagraph.textContent = "";
-  contentParagraph.textContent = "Información sobre cursos Udemy";
+  contentParagraph.textContent = "A principios del 2020 completé el curso Complete Javascript en Udemy lo que me brindó una fuerte base de vanilla javascript. Desde entonces, he realizado varios cursos en plataformas como Udemy, Front-End Masters y Ui.dev para potenciar mi aprendizaje autodidacta.";
 })
 
 laboratoriaCircle.addEventListener('click', () => {
@@ -44,7 +44,7 @@ laboratoriaCircle.addEventListener('click', () => {
   udemyCircle.classList.remove('active-svg-circle');
   developmentCircle.classList.remove('active-svg-circle');
   contentParagraph.textContent = "";
-  contentParagraph.textContent = "Información sobre bootcamp Laboratoria";
+  contentParagraph.textContent = "En marzo del 2020 empecé a estudiar desarrollo front-end de manera más estructurada a través del bootcamp de Laboratoria, durante el cual trabajé en equipo junto a mis compañeras para desarrollar distintas aplicaciones web.";
 })
 
 developmentCircle.addEventListener('click', () => {
@@ -54,7 +54,7 @@ developmentCircle.addEventListener('click', () => {
   udemyCircle.classList.remove('active-svg-circle');
   laboratoriaCircle.classList.remove('active-svg-circle');
   contentParagraph.textContent = "";
-  contentParagraph.textContent = "Información sobre mi inicio como Front-End Developer";
+  contentParagraph.textContent = "Hoy, me siento totalmente preparada para comenzar a trabajar como desarrolladora, con la confianza de que podré enfrentar adecuadamente los desafíos que se me presenten y con muchas ganas de continuar aprendiendo.";
 })
 
 // Skills
