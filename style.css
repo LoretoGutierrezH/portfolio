@@ -39,11 +39,27 @@ html {
   display: flex;
   list-style: none;
   justify-content: space-evenly;
+  height: 100%;
+  align-items: center;
 
 }
 
 .up-sticky-nav>ul>li {
-  margin: 0 1rem;
+  height: 100%;
+  width: 12rem;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.up-sticky-nav > ul > li > a {
+  padding: 2rem;
+}
+
+.up-sticky-nav > ul > li:hover {
+  background-color: grey;
+  width: 12rem;
+  text-align: center;
+  padding-top: 2rem;
 }
 
 nav>ul>li>a {
@@ -78,14 +94,15 @@ header {
 
 .greeting1 {
   font-size: 3rem;
+  position: relative;
+  top: 5rem;
 }
 
-.call-to-action {
-  font-size: 3rem;
-}
-
-.introduction :nth-child(2) {
-  font-size: 3rem;
+.greeting2 {
+  margin-top: 5rem;
+  width: 56vw;
+  margin-left: 1rem;
+  font-size: 2rem;
 }
 
 .profile-pic {
@@ -113,22 +130,6 @@ header {
   min-height: 13rem;
 }
 
-.main-btn {
-  border: 2px solid grey;
-  padding: 1rem;
-  font-size: 2rem;
-  background-color: black;
-  color: white;
-  box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.75);
-
-}
-
-input[type="button"]:hover,
-input[type="button"]:focus {
-  background-color: grey;
-  border: none;
-  offset: none;
-}
 
 /* MAIN CONTENT */
 
@@ -185,6 +186,7 @@ input[type="button"]:focus {
 
 .work-content-intro {
   margin: 5rem;
+  margin-top: 11rem;
   text-align: center;
   font-size: 1.7rem;
 }
@@ -239,12 +241,23 @@ input[type="button"]:focus {
   min-height: 20rem;
 }
 
+hr#skills {
+  margin-bottom: 19rem;
+}
+
+h3.skills-heading {
+  margin-top: -8rem;
+  margin-bottom: 9rem;
+  text-align: center;
+  font-size: 1.7rem;
+}
+
 .skills-navbar {
     position: absolute;
     top: -2rem;
     display: flex;
     left: 2rem;
-    height: 2rem;
+    height: 3rem;
     background-color: grey;
     align-items: center;
     width: 75vw;
@@ -254,9 +267,12 @@ input[type="button"]:focus {
 
   .skills-navbar > p {
     margin: 0 0rem;
-    height: 2rem;
+    height: 3rem;
     width: 8rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
 
   .skills-navbar > p:first-child {
@@ -282,7 +298,7 @@ input[type="button"]:focus {
 
   .skills-navbar > p:hover {
     background-color: #4F574D;
-    height: 2rem;
+    height: 3rem;
     text-align: center;
     cursor: pointer;
   }
@@ -372,6 +388,10 @@ input[type="button"]:focus {
   color: white;
 }
 
+form > h3 {
+  font-size: 1.7rem;
+}
+
 footer {
   background-color: black;
   display: flex;
@@ -450,6 +470,7 @@ hr {
 .grey-circle:focus,
 .grey-circle:active {
   fill: blue;
+  cursor: pointer;
 }
 
 .active-svg-circle {

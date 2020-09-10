@@ -14,7 +14,7 @@
   <div id="root">
           <nav class="up-sticky-nav">
             <ul>
-              <li><a href="#more-about-me">Sobre mí</a></li>
+              <li href="#work"><a href="#more-about-me">Sobre mí</a></li>
               <li><a href="#skills">Habilidades</a></li>
               <li><a href="#work">Mi trabajo</a></li>
               <li><a href="#contact-form">Contáctame</a></li>
@@ -22,7 +22,9 @@
           </nav>
           <header>
             <section class="introduction">
-              <p class="greeting1">Hola, soy Loreto,<br> Desarrolladora <br>Front-End</p>
+              <p class="greeting1">Loreto Gutiérrez</p>
+              <p class="greeting2">Desarrolladora Front-End</p>
+
               <!-- <p class="call-to-action">Conoce mi trabajo y el valor<br>que puedo aportar a tu equipo</p> -->
             </section>
             <section class="profile-pic">
@@ -33,9 +35,7 @@
           <article class="about-cta">
             <!-- <section class="basic-info"> -->
               <p>
-                Tengo una actitud positiva frente a la vida, un enfoque práctico hacia los problemas y mi superpoder es
-                el
-                aprendizaje autodidacta.
+                Tengo una actitud positiva frente a la vida, un enfoque práctico hacia los problemas y mi superpoder es el aprendizaje autodidacta.
               </p>
             <!-- </section> -->
           </article>
@@ -84,8 +84,8 @@
         <div class="inner-form-wrapper"> -->
           
           <main class="contact">
-            <article id="more-about-me" class="about">
-              <h3>Selecciona las opciones para saber más sobre mí.</h3>
+            <article class="about">
+              <h3 id="more-about-me">Selecciona las opciones para saber más sobre mí.</h3>
                <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
                  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
                  xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -494,12 +494,12 @@
                </section>
               
               </article>
-           <hr>
-
+           <hr id="skills">
+            <h3 class="skills-heading">Habilidades</h3>
             
-           <article id="skills" class="skills">
+           <article class="skills">
              <nav id="skills-navbar" class="skills-navbar">
-               <p class="active">Base sólida</p>
+               <p class="active-option">Base sólida</p>
                <p>Nociones</p>
                <p>Interés</p>
              </nav>
@@ -565,8 +565,8 @@
              
              
            </article>
-           <article id="work" class="work">
-             <hr>
+           <article class="work">
+             <hr id="work">
             <section class="work-content-intro">
                <h3>Presiona las imágenes para ver cada uno de mis proyectos</h3>
             </section>
@@ -589,10 +589,10 @@
             </section>
            </article>
            <article id="contact" class="contact">
-           <hr>
+           <hr id="contact-form">
 
-             <form id="contact-form" action="">
-               <h1>Escríbeme</h1>
+             <form action="">
+               <h3>Escríbeme</h3>
                <!-- <div class="g-recaptcha" data-sitekey="6LdsfMkZAAAAAMTXw5fDxe_r12htv-jw-zRBQdC6"></div> -->
                <input name="user_name" type="text" placeholder="Nombre" required><br>
                <input name="user_email" type="text" placeholder="Correo electrónico" required><br>
