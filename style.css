@@ -1,20 +1,22 @@
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
 html {
-  font-size: 65.2%; 
+  font-size: 65.2%;
   font-family: 'Montserrat',
-  sans-serif;
+    sans-serif;
   color: white;
 }
 
 #root {
- min-height: 100vh;
- background-color: white;
- /* width: 100vw; */
+  min-height: 100vh;
+  background-color: white;
+  /* width: 100vw; */
 
 }
 
@@ -33,18 +35,18 @@ html {
 
 }
 
-.up-sticky-nav > ul {
+.up-sticky-nav>ul {
   display: flex;
   list-style: none;
   justify-content: space-evenly;
 
 }
 
-.up-sticky-nav > ul > li {
+.up-sticky-nav>ul>li {
   margin: 0 1rem;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   text-decoration: none;
   color: white;
 }
@@ -97,7 +99,7 @@ header {
   background-color: white;
 }
 
-.profile-pic > img {
+.profile-pic>img {
   height: 100%;
   width: 100%;
   border-radius: 50%;
@@ -130,7 +132,7 @@ input[type="button"]:focus {
 
 /* MAIN CONTENT */
 
-.about-cta{
+.about-cta {
   background-color: white;
   height: 29vh;
   width: 100%;
@@ -141,7 +143,7 @@ input[type="button"]:focus {
   text-align: center;
 }
 
-.about-cta > p {
+.about-cta>p {
   width: 50%;
   font-size: 1.8rem;
   color: grey;
@@ -156,12 +158,12 @@ input[type="button"]:focus {
   background: linear-gradient(189deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 11%, rgba(0, 0, 0, 1) 11.2%);
 }
 
-.about > h3 {
+.about>h3 {
   margin-top: 22rem;
   font-size: 1.7rem;
 }
 
-.about > section > p {
+.about>section>p {
   font-size: 1.1rem;
   margin: 0 4rem;
   position: absolute;
@@ -171,7 +173,7 @@ input[type="button"]:focus {
   padding: 2rem;
 }
 
-.about > section {
+.about>section {
   text-align: left;
 }
 
@@ -197,7 +199,7 @@ input[type="button"]:focus {
   align-items: center;
 }
 
-.card > button {
+.card>button {
   width: 2rem;
 }
 
@@ -205,7 +207,7 @@ input[type="button"]:focus {
   width: 100%
 }
 
-.image-container > img {
+.image-container>img {
   width: 100%;
 }
 
@@ -217,7 +219,7 @@ input[type="button"]:focus {
   background-color: #F7F0E9;
 }
 
-.work-content-intro > h3 {
+.work-content-intro>h3 {
   animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 
@@ -225,31 +227,78 @@ input[type="button"]:focus {
 .skills {
   display: flex;
   flex-flow: column;
-  margin: 3rem;
+  margin: 4rem 3rem;
+  margin-bottom: 2rem;
   position: relative;
   min-height: 20rem;
 }
 
 .skills-navbar {
-  position: absolute;
-  top: -2rem;
-  display: flex;
-  left: 2rem;
-}
+    position: absolute;
+    top: -2rem;
+    display: flex;
+    left: 2rem;
+    height: 2rem;
+    background-color: grey;
+    align-items: center;
+    width: 75vw;
+    justify-content: space-between;
+    font-weight: bold;
+  }
 
-.skills-navbar > p {
-  margin: 0 1rem;
-}
+  .skills-navbar > p {
+    margin: 0 0rem;
+    height: 2rem;
+    width: 8rem;
+    text-align: center;
+  }
 
-.skills-content {
-  position: absolute;
-  top: 1rem;
-  left: 5rem;
-}
+  .skills-navbar > p:first-child {
+    width: 13rem;
+  }
 
-.skills-content div > ul {
-  list-style: none;
-}
+  .skills-navbar > p:nth-child(2) {
+    width: 15rem;
+    margin-right: 3rem;
+  }
+
+  .skills-navbar > p:last-child {
+    width: 15rem;
+    margin-left: -3rem;
+  }
+
+  .active-option {
+    background-color: #4F574D;
+    height: 2rem;
+    width: 8rem;
+    text-align: center;
+  }
+
+  .skills-navbar > p:hover {
+    background-color: #4F574D;
+    height: 2rem;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .skills-content {
+    width: 75vw;
+    background-color: #4F574D;
+    position: relative;
+    left: 2rem;
+    min-height: 20rem;
+    padding: 4rem;
+  }
+
+  .skills-content > div {
+    position: absolute;
+    width: 75vw;
+  }
+
+  .strong-basics-option {
+    display: flex;
+    justify-content: space-evenly;
+  }
 
 /* CONTACT FORM */
 .contact {
@@ -276,7 +325,7 @@ input[type="button"]:focus {
 
 .contact textarea {
   font-family: 'Montserrat',
-  sans-serif;
+    sans-serif;
   width: 30rem;
   height: 30rem;
 }
@@ -286,7 +335,7 @@ input[type="button"]:focus {
   padding: 0.5rem;
   background-color: black;
   border: 2px solid grey;
-  color: white; 
+  color: white;
 }
 
 footer {
@@ -313,7 +362,7 @@ footer i:hover {
   margin-top: 1rem;
 }
 
-.professional-links > i{
+.professional-links>i {
   font-size: 3rem;
 }
 
@@ -353,15 +402,19 @@ hr {
 }
 
 .grey-circle {
-  fill:#999999;
-  stroke-width:0.26458332
+  fill: #999999;
+  stroke-width: 0.26458332
 }
 
-.grey-circle:hover, .grey-circle:focus, .grey-circle:active {
+.grey-circle:hover,
+.grey-circle:focus,
+.grey-circle:active {
   fill: red;
 }
 
-.white-circle:hover, .white-circle:focus, .white-circle:active {
+.white-circle:hover,
+.white-circle:focus,
+.white-circle:active {
   fill: blue;
 }
 
@@ -370,7 +423,7 @@ hr {
 /* MEDIA QUERIES */
 
 @media (min-width: 1065px) {
-  .up-sticky-nav > ul {
+  .up-sticky-nav>ul {
     display: flex;
     list-style: none;
     justify-content: space-evenly;
@@ -386,14 +439,14 @@ hr {
     top: 42%;
     border-radius: 50%;
     background-color: white;
-    
+
   }
 
   .about {
     background: linear-gradient(185deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 11%, rgba(0, 0, 0, 1) 11.2%);
   }
 
-  .about > section > p {
+  .about>section>p {
     font-size: 1.1rem;
     margin: 0 4rem;
     position: absolute;
@@ -418,11 +471,31 @@ hr {
     margin: 10rem;
   }
 
-  .work-content-intro > h3 {
+  .work-content-intro>h3 {
     font-size: 1.7rem;
   }
 
+
+  
+
+  /* WORK SECTION */
+
+  .work-content-intro {
+    margin: 5rem;
+    text-align: center;
+  }
+
+  .work-content-cards {
+    display: flex;
+    justify-content: center;
+  }
+
   .card {
+    width: 20vw;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 4rem;
     transition: all .2s ease-in-out;
   }
@@ -431,7 +504,28 @@ hr {
     transform: scale(1.2);
   }
 
-  #contact-form > h1 {
+  .card>button {
+    width: 2rem;
+  }
+
+  .card.image-container {
+    width: 100%
+  }
+
+  .image-container>img {
+    width: 100%;
+  }
+
+  .card:first-child {
+    background-color: #81D2CB;
+  }
+
+  .card:last-child {
+    background-color: #F7F0E9;
+  }
+
+
+  #contact-form>h1 {
     font-size: 1.7rem;
   }
 }

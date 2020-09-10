@@ -498,13 +498,13 @@
 
             
            <article id="skills" class="skills">
-             <nav class="skills-navbar">
-               <p>Base sólida</p>
+             <nav id="skills-navbar" class="skills-navbar">
+               <p class="active">Base sólida</p>
                <p>Nociones</p>
                <p>Interés</p>
              </nav>
              <section class="skills-content">
-              <div>
+              <div id="strong-basics-option">
                 <ul class="">
                   <li>HTML5</li>
                   <li>CSS3</li>
@@ -515,8 +515,11 @@
                   <li>Git y GitHub</li>
                   <li>Ubuntu y la terminal</li>
                 </ul>
+                <div class="competency-description">
+                  <p>Cuento con las competenias necesarias para...</p>
+                </div>
               </div>
-              <div class="hidden">
+              <div id="notions-option" class="hidden">
                 <ul>
                   <li>Node</li>
                   <li>Express</li>
@@ -525,7 +528,7 @@
                   <li>Ruby On Rails</li>
                 </ul>
               </div>
-              <div class="hidden">
+              <div id="interest-option" class="hidden">
                 <ul>
                   <li>Desarrollo back-end</li>
                   <li>Node, Express, MongoDB</li>
@@ -548,19 +551,16 @@
                 <div class="image-container">
                   <img src="./portfolio-assets/logoPawLovers.png" alt="">
                 </div>
-                <button>&plus;</button>
               </div>
               <div class="card">
                 <div class="image-container">
                   <img src="./portfolio-assets/japanqueenlogo.jpeg" alt="">
                 </div>
-                <button>&plus;</button>
               </div>
               <div class="card">
                 <div class="image-container">
                 <img src="./portfolio-assets/wizards-unite-logo.png" alt="">
                 </div>
-                <button>&plus;</button>
               </div>
             </section>
            </article>

@@ -33,4 +33,48 @@ developmentCircle.addEventListener('click', () => {
   contentParagraph.textContent = "Información sobre mi inicio como Front-End Developer";
 })
 
-//cards slider horizontal for my work section
+// Skills
+
+const skillsNavbar = document.querySelector('#skills-navbar');
+
+console.log(skillsNavbar)
+
+const strongBasics = skillsNavbar.children[0];
+const notions = skillsNavbar.children[1];
+const interest = skillsNavbar.children[2];
+console.log(strongBasics, notions, interest);
+
+const strongBasicsContent = document.querySelector('#strong-basics-option');
+const notionsContent = document.querySelector('#notions-option');
+const interestContent = document.querySelector('#interest-option');
+
+console.log(strongBasicsContent, notionsContent, interestContent);
+const skillsNavbarArray = Array.from(skillsNavbar.children);
+
+skillsNavbarArray.forEach((option) => {
+  option.addEventListener('click', (event) => {    
+    if (event.target.innerText === "Base sólida") {
+      event.target.classList.add('active-option')
+      notions.classList.remove('active-option');
+      interest.classList.remove('active-option');
+      strongBasicsContent.classList.remove('hidden');
+      notionsContent.classList.add('hidden');
+      interestContent.classList.add('hidden');
+    } else if (event.target.innerText === "Nociones") {
+      event.target.classList.add('active-option');
+      strongBasics.classList.remove('active-option');
+      interest.classList.remove('active-option');
+      notionsContent.classList.remove('hidden');
+      strongBasicsContent.classList.add('hidden');
+      interestContent.classList.add('hidden');
+    } else {
+      event.target.classList.add('active-option');
+      strongBasics.classList.remove('active-option');
+      notions.classList.remove('active-option');
+      interestContent.classList.remove('hidden');
+      notionsContent.classList.add('hidden');
+      strongBasicsContent.classList.add('hidden');
+    }
+
+  })
+})
