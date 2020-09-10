@@ -16,7 +16,7 @@ html {
 #root {
   min-height: 100vh;
   background-color: white;
-  /* width: 100vw; */
+  width: 100vw;
 
 }
 
@@ -46,7 +46,7 @@ html {
 
 .up-sticky-nav>ul>li {
   height: 100%;
-  width: 12rem;
+  width: 0rem;
   text-align: center;
   padding-top: 2rem;
 }
@@ -84,6 +84,7 @@ header {
   background: rgb(0, 0, 0);
   background: linear-gradient(189deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 46%, rgba(255, 255, 255, 1) 46.2%);
   margin-top: 6rem;
+  width: 100vw;
 }
 
 .introduction {
@@ -136,7 +137,7 @@ header {
 .about-cta {
   background-color: white;
   height: 29vh;
-  width: 100%;
+  width: 63%;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
@@ -164,6 +165,7 @@ header {
   font-size: 1.7rem;
   margin-left: 9rem;
   margin-right: 9rem;
+  width: 50%;
 }
 
 .about>section>p {
@@ -355,6 +357,7 @@ h3.skills-heading {
   background-color: black;
   min-height: 111vh;
   margin-top: 6rem;
+  width: 100vw;
 
 }
 
@@ -402,6 +405,7 @@ footer {
   font-size: 1.5rem;
   align-items: center;
   margin-top: 0rem;
+  width: 100vw;
 }
 
 footer i {

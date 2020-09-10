@@ -2,31 +2,21 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" type="text/html">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" type="text/css" href="./css/style.css">
-   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap"
-     rel="stylesheet">
-  <!-- update the version number as needed -->
-  <script defer src="/__/firebase/7.19.1/firebase-app.js"></script>
-  <!-- include only the Firebase features as you need -->
-  <script defer src="/__/firebase/7.19.1/firebase-auth.js"></script>
-  <script defer src="/__/firebase/7.19.1/firebase-database.js"></script>
-  <script defer src="/__/firebase/7.19.1/firebase-messaging.js"></script>
-  <script defer src="/__/firebase/7.19.1/firebase-storage.js"></script>
-  <!-- initialize the SDK after all desired features are loaded -->
-  <script defer src="/__/firebase/init.js"></script>
- 
   <script src="https://kit.fontawesome.com/7406bf6020.js" crossorigin="anonymous"></script>
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <title>Loreto G.-Front-End</title>
+  <link rel="stylesheet" content-type="text/css" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
   <div id="root">
     <nav class="up-sticky-nav">
       <ul>
-        <li><a href="#more-about-me">Sobre mí</a></li>
+        <li href="#work"><a href="#more-about-me">Sobre mí</a></li>
         <li><a href="#skills">Habilidades</a></li>
         <li><a href="#work">Mi trabajo</a></li>
         <li><a href="#contact-form">Contáctame</a></li>
@@ -34,7 +24,9 @@
     </nav>
     <header>
       <section class="introduction">
-        <p class="greeting1">Hola, soy Loreto,<br> Desarrolladora <br>Front-End</p>
+        <p class="greeting1">Loreto Gutiérrez</p>
+        <p class="greeting2">Desarrolladora Front-End</p>
+
         <!-- <p class="call-to-action">Conoce mi trabajo y el valor<br>que puedo aportar a tu equipo</p> -->
       </section>
       <section class="profile-pic">
@@ -45,8 +37,7 @@
     <article class="about-cta">
       <!-- <section class="basic-info"> -->
       <p>
-        Tengo una actitud positiva frente a la vida, un enfoque práctico hacia los problemas y mi superpoder es
-        el
+        Tengo una actitud positiva frente a la vida, un enfoque práctico hacia los problemas y mi superpoder es el
         aprendizaje autodidacta.
       </p>
       <!-- </section> -->
@@ -96,8 +87,8 @@
         <div class="inner-form-wrapper"> -->
 
     <main class="contact">
-      <article id="more-about-me" class="about">
-        <h3>Selecciona los círculos para saber más sobre mí.</h3>
+      <article class="about">
+        <h3 id="more-about-me">Selecciona las opciones para saber más sobre mí.</h3>
         <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
           xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
           xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -122,7 +113,7 @@
           </metadata>
           <g inkscape:label="Capa 1" inkscape:groupmode="layer" id="layer1" transform="translate(0,11)"
             style="display:inline">
-            <path class="white-circle translation"
+            <path class="white-circle translation active-svg-circle"
               d="M 168.59333,6.3542081 A 11.339286,11.339286 0 0 0 157.25397,17.693051 11.339286,11.339286 0 0 0 168.59333,29.03241 11.339286,11.339286 0 0 0 179.93217,17.693051 11.339286,11.339286 0 0 0 168.59333,6.3542081 Z"
               id="circle-1" inkscape:connector-curvature="0" inkscape:label="#path10" />
             <path class="grey-circle ruby"
@@ -497,85 +488,120 @@
         </svg>
         <section>
           <p class="aboutMe-content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nulla a reiciendis possimus minus
-            repudiandae facere vero? Iure delectus repudiandae incidunt, mollitia odit nulla illo aspernatur, a
-            quis eligendi illum!
+            Soy traductora inglés-español de profesión, pero ahora estoy totalmente enfocada en la programación.
+            Poseo una base sólida de HTML5, CSS3, Vanilla Javascript y React, y me interesan tanto las
+            tecnologías de Front-End como las de Back-End.
           </p>
         </section>
 
       </article>
-      <hr>
+      <hr id="skills">
+      <h3 class="skills-heading">Habilidades</h3>
 
-
-      <article id="skills" class="skills">
-        <nav class="skills-navbar">
-          <p>Base sólida</p>
+      <article class="skills">
+        <nav id="skills-navbar" class="skills-navbar">
+          <p class="active-option">Base sólida</p>
           <p>Nociones</p>
           <p>Interés</p>
         </nav>
         <section class="skills-content">
-          <div>
-            <ul class="">
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>Vanilla Javascript</li>
-              <li>React (Router, Redux)</li>
-              <li>Firebase</li>
-              <li>Figma</li>
-              <li>Git y GitHub</li>
-              <li>Ubuntu y la terminal</li>
-            </ul>
+          <div id="strong-basics-option" class="active">
+            <section class="skills-outline">
+              <ul class="">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Vanilla Javascript</li>
+                <li>React (Router, Redux)</li>
+                <li>Firebase</li>
+                <li>Figma</li>
+                <li>Git y GitHub</li>
+                <li>Ubuntu y la terminal</li>
+              </ul>
+              <div class="javascript-img-container">
+                <img src="./assets/js.png" alt="js-icon">
+              </div>
+            </section>
+            <div class="competency-description">
+              <p>Cuento con las competenias necesarias para desarrollar aplicaciones web funcionales utilizando estas
+                herramientas y puedo resolver de manera independiente la mayoría de los problemas que se me presentan.
+              </p>
+            </div>
           </div>
-          <div class="hidden">
-            <ul>
-              <li>Node</li>
-              <li>Express</li>
-              <li>MongoDB</li>
-              <li>PostgreSQL</li>
-              <li>Ruby On Rails</li>
-            </ul>
+          <div id="notions-option" class="hidden">
+            <section class="skills-outline">
+              <ul>
+                <li>Node</li>
+                <li>Express</li>
+                <li>MongoDB</li>
+                <li>PostgreSQL</li>
+                <li>Ruby On Rails</li>
+              </ul>
+
+              <div class="javascript-img-container">
+                <img src="./assets/js.png" alt="js-icon">
+              </div>
+            </section>
+
+            <div class="competency-description">
+              <p>Poseo conocimientos en estas tecnologías y las he utilizado, pero actualmente no soy usuaria activa de
+                ella, por lo que podría necesitar tiempo para practicar o aprender lo que no maneje.</p>
+            </div>
           </div>
-          <div class="hidden">
-            <ul>
-              <li>Desarrollo back-end</li>
-              <li>Node, Express, MongoDB</li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
+          <div id="interest-option" class="hidden">
+            <section class="skills-outline">
+              <ul>
+                <li>Desarrollo back-end</li>
+                <li>Node, Express, MongoDB</li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <div class="javascript-img-container">
+                <img src="./assets/js.png" alt="js-icon">
+              </div>
+            </section>
+
+            <div class="competency-description">
+              <p>Me gustaría aprender a utilizar estas herramientas y/o quiero enfocar mi desarrollo profesional en
+                estas áreas.</p>
+            </div>
           </div>
         </section>
 
 
       </article>
-      <article id="work" class="work">
-        <hr>
+      <article class="work">
+        <hr id="work">
         <section class="work-content-intro">
-          <h3>Mi trabajo</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo odio ipsam quo voluptatem nisi
-            similique dignissimos, est tempora. Fugit ab, facilis cum voluptatem quis beatae nesciunt aliquam ipsam
-            fugiat odit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, iusto porro quaerat
-            sapiente saepe facere nostrum optio, provident accusantium quo praesentium minus, non quos animi nulla
-            aut culpa numquam nam!</p>
+          <h3>Presiona las imágenes para ver cada uno de mis proyectos</h3>
         </section>
         <section class="work-content-cards">
           <div class="card">
-            <button>Más</button>
+            <div class="image-container">
+              <img src="./assets/logoPawLovers.png" alt="">
+            </div>
           </div>
-          <div class="card">Japan Queen</div>
-          <div class="card">Shopping Cart</div>
+          <div class="card">
+            <div class="image-container">
+              <img src="./assets/japanqueenlogo.jpeg" alt="">
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-container">
+              <img src="./assets/wizards-unite-logo.png" alt="">
+            </div>
+          </div>
         </section>
       </article>
       <article id="contact" class="contact">
-        <hr>
+        <hr id="contact-form">
 
-        <form id="contact-form" action="">
-          <h1>Escríbeme</h1>
-          <div class="g-recaptcha" data-sitekey="6LdsfMkZAAAAAMTXw5fDxe_r12htv-jw-zRBQdC6"></div>
-          <!-- <input type="hidden" name="contact_number"> -->
-          <input name="user_name" type="text" placeholder="Nombre"><br>
-          <input name="user_email" type="text" placeholder="Correo electrónico"><br>
-          <textarea name="message" type="text" placeholder="Escribe aquí..."></textarea><br>
+        <form action="">
+          <h3>Escríbeme</h3>
+          <!-- <div class="g-recaptcha" data-sitekey="6LdsfMkZAAAAAMTXw5fDxe_r12htv-jw-zRBQdC6"></div> -->
+          <input name="user_name" type="text" placeholder="Nombre" required><br>
+          <input name="user_email" type="text" placeholder="Correo electrónico" required><br>
+          <textarea name="message" type="text" placeholder="Escribe aquí..." required></textarea><br>
           <button type="submit" class="send-btn">Enviar</button>
         </form>
         <p class="form-action-message"></p>
@@ -587,8 +613,10 @@
 
     <footer>
       <h5>Creado con HTML5, CSS3 y Vanilla JS</h5>
-      <i class="fab fa-github"></i>
-      <i class="fab fa-linkedin"></i>
+      <div class="professional-links">
+        <i class="fab fa-github"></i>
+        <i class="fab fa-linkedin"></i>
+      </div>
     </footer>
   </div>
 
