@@ -161,6 +161,8 @@ input[type="button"]:focus {
 .about>h3 {
   margin-top: 22rem;
   font-size: 1.7rem;
+  margin-left: 9rem;
+  margin-right: 9rem;
 }
 
 .about>section>p {
@@ -183,16 +185,19 @@ input[type="button"]:focus {
 .work-content-intro {
   margin: 5rem;
   text-align: center;
+  font-size: 1.7rem;
 }
 
 .work-content-cards {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .card {
-  width: 20vw;
-  margin: 0 1rem;
+  width: 80vw;
+  margin: 1rem;
   animation: 1s ease-out 0s 1 slideInFromLeft;
   display: flex;
   justify-content: center;
@@ -286,7 +291,7 @@ input[type="button"]:focus {
     background-color: #4F574D;
     position: relative;
     left: 2rem;
-    min-height: 20rem;
+    min-height: 28rem;
     padding: 4rem;
   }
 
@@ -295,9 +300,21 @@ input[type="button"]:focus {
     width: 75vw;
   }
 
-  .strong-basics-option {
-    display: flex;
-    justify-content: space-evenly;
+  .skills-content > div > ul {
+    margin-left: -3rem;
+  }
+
+  .competency-description {
+    width: 43vw;
+    margin-right: 1rem;
+  }
+
+  .competency-description > p {
+    width: 95%;
+  }
+
+  #strong-basics-option {
+    
   }
 
 /* CONTACT FORM */
@@ -373,7 +390,9 @@ footer i:hover {
 }
 
 .active {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 @keyframes slideInFromLeft {
@@ -406,19 +425,19 @@ hr {
   stroke-width: 0.26458332
 }
 
+ 
+.white-circle:hover,
+.white-circle:focus,
+.white-circle:active,
 .grey-circle:hover,
 .grey-circle:focus,
 .grey-circle:active {
-  fill: red;
-}
-
-.white-circle:hover,
-.white-circle:focus,
-.white-circle:active {
   fill: blue;
 }
 
-
+.active-svg-circle {
+  fill: blue;
+}
 
 /* MEDIA QUERIES */
 
@@ -487,7 +506,9 @@ hr {
 
   .work-content-cards {
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: unset;
   }
 
   .card {
