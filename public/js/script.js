@@ -30,6 +30,7 @@ const rorDescription = document.querySelector('#ror-description');
 const udemyDescription = document.querySelector('#udemy-description');
 const laboratoriaDescription = document.querySelector('#laboratoria-description');
 const frontEndDescription = document.querySelector('#front-end-description');
+const extraDescription = document.querySelector('#extra-description');
 
 
 
@@ -42,7 +43,7 @@ translationCircle.forEach((circle) => {
     })
     extraInfoCircle.classList.remove('active-svg-circle');
     
-    const descriptionContainers = [rorDescription, udemyDescription, laboratoriaDescription, frontEndDescription];
+    const descriptionContainers = [rorDescription, udemyDescription, laboratoriaDescription, frontEndDescription, extraDescription];
     descriptionContainers.forEach(container => {
       container.textContent = "";
     })
@@ -61,7 +62,7 @@ rubyCircle.forEach(circle => {
     })
     extraInfoCircle.classList.remove('active-svg-circle');
 
-    const descriptionContainers = [translationDescription, udemyDescription, laboratoriaDescription, frontEndDescription];
+    const descriptionContainers = [translationDescription, udemyDescription, laboratoriaDescription, frontEndDescription, extraDescription];
     descriptionContainers.forEach(container => {
       container.textContent = "";
     })
@@ -81,7 +82,7 @@ udemyCircle.forEach(circle => {
     })
     extraInfoCircle.classList.remove('active-svg-circle');
 
-    const descriptionContainers = [translationDescription, rorDescription, laboratoriaDescription, frontEndDescription];
+    const descriptionContainers = [translationDescription, rorDescription, laboratoriaDescription, frontEndDescription, extraDescription];
     descriptionContainers.forEach(container => {
       container.textContent = "";
     })
@@ -99,7 +100,7 @@ laboratoriaCircle.forEach(circle => {
       inactiveCircle.classList.remove('active-svg-circle');
     })
     extraInfoCircle.classList.remove('active-svg-circle');
-    const descriptionContainers = [translationDescription, rorDescription, udemyDescription, frontEndDescription];
+    const descriptionContainers = [translationDescription, rorDescription, udemyDescription, frontEndDescription, extraDescription];
     descriptionContainers.forEach(container => {
       container.textContent = "";
     })
@@ -118,7 +119,7 @@ developmentCircle.forEach(circle => {
       inactiveCircle.classList.remove('active-svg-circle');
     })
     extraInfoCircle.classList.remove('active-svg-circle');
-    const descriptionContainers = [translationDescription, rorDescription, udemyDescription, laboratoriaDescription];
+    const descriptionContainers = [translationDescription, rorDescription, udemyDescription, laboratoriaDescription, extraDescription];
     descriptionContainers.forEach(container => {
       container.textContent = "";
     })
@@ -133,8 +134,12 @@ extraInfoCircle.addEventListener('click', () => {
   inactiveCircles.forEach(inactiveCircle => {
     inactiveCircle.classList.remove('active-svg-circle');
   })
-  contentParagraph.textContent = "";
-  contentParagraph.textContent = "Información extra sobre mí";
+  const descriptionContainers = [translationDescription, rorDescription, udemyDescription, laboratoriaDescription, frontEndDescription];
+  descriptionContainers.forEach(container => {
+    container.textContent = "";
+  })
+  extraDescription.textContent = "";
+  extraDescription.textContent = "Información extra sobre mí";
 })
 
 // SKILLS NAVBAR AND CONTENT
