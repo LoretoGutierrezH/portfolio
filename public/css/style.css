@@ -486,6 +486,15 @@ hr {
 /* MEDIA QUERIES */
 
 @media (min-width: 1065px) {
+  hr {
+    width: 83vw;
+    margin: 0 auto;
+  }
+
+  .up-sticky-nav {
+    font-size: 1.5rem;
+  }
+
   .up-sticky-nav>ul {
     display: flex;
     list-style: none;
@@ -493,9 +502,25 @@ hr {
     width: 100vw;
   }
 
+  header {
+    background: linear-gradient(189deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 55%, rgba(255, 255, 255, 1) 55.2%);
+  }
+  
+
+  .about-cta {
+    margin-top: -14rem;
+  }
+
+  .greeting1 {
+    font-size: 5rem;
+  }
+
+  .greeting2 {
+    font-size: 3rem;
+  }
+
   .profile-pic {
-    height: 15rem;
-    width: 15rem;
+    width: 17rem;
     position: absolute;
     /* transform: translateX(144%); */
     left: 45%;
@@ -507,6 +532,15 @@ hr {
 
   .about {
     background: linear-gradient(185deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 11%, rgba(0, 0, 0, 1) 11.2%);
+  }
+
+  .about > h3 {
+    margin: 0 auto;
+    margin-top: 22rem;
+    margin-bottom: 7rem;
+    font-size: 1.7rem;
+    width: 50%;
+    text-align: center;
   }
 
   .about>section>p {
@@ -528,6 +562,28 @@ hr {
     margin: 6rem 12rem;
     position: relative;
     min-height: 20rem;
+  }
+
+  h3.skills-heading {
+    margin: 0 auto;
+    margin-top: -8rem;
+    margin-bottom: 9rem;
+    text-align: center;
+    font-size: 1.7rem;
+    width: 90vw;
+  }
+
+  .skills-navbar {
+    width: 76vw;
+    font-size: 1.5rem;
+  }
+
+  .skills-content {
+    font-size: 1.5rem;
+  }
+
+  .skills-outline > ul {
+    min-height: 18rem;
   }
 
   .work {
