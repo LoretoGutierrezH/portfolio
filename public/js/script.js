@@ -1,14 +1,21 @@
-// ABLE/DISABLE SVG ACCORDING TO VIEWPORT SIZE
+// ABLE/DISABLE SVG AND DETERMINE ICON SIZE ACCORDING TO VIEWPORT SIZE
 const viewPortWidth = document.documentElement.clientWidth;
 const desktopSVG = document.querySelector('#desktop-svg');
 const mobileSVG = document.querySelector('#mobile-svg');
+const imageContainer = document.querySelectorAll('.javascript-img-container');
 
 if (viewPortWidth > 425) {
   desktopSVG.classList.replace('hidden', 'active-svg');
   mobileSVG.classList.add('hidden');
+  imageContainer.forEach(img => {
+    img.style.width = "18rem";
+  })
 } else {
   desktopSVG.classList.replace('active-svg', 'hidden');
   mobileSVG.classList.replace('hidden', 'active-svg');
+  imageContainer.forEach(img => {
+    img.style.width = "7rem";
+  })
 }
 // SVG CIRCLE ACTIVATION AND SHOW/HIDE ABOUT ME CONTENT
 const translationCircle = document.querySelectorAll('.translation');

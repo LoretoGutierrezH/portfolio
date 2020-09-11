@@ -541,7 +541,7 @@ hr {
     width: 17rem;
     position: absolute;
     /* transform: translateX(144%); */
-    left: 45%;
+    left: 43%;
     top: 42%;
     border-radius: 50%;
     background-color: white;
@@ -602,7 +602,16 @@ hr {
 
   .skills-outline > ul {
     min-height: 18rem;
+    margin-left: -6rem;
   }
+
+  .skill-description {
+    margin-left: 8rem;
+    margin-top: 4rem;
+    max-width: 50vw;
+  }
+
+  
 
   .work {
     margin: 10rem;
