@@ -301,7 +301,7 @@ h3.skills-heading {
   width: 75vw;
   position: relative;
   left: 2rem;
-  min-height: 28rem;
+  min-height: 42rem;
   padding: 4rem;
 }
 
@@ -321,23 +321,41 @@ h3.skills-heading {
   margin-right: 8rem;
 }
 
+.skills-outline > ul > li {
+  cursor: pointer;
+  margin: 1rem 0;
+}
+
+.skill-description {
+  margin-top: 1rem;
+  max-width: 27rem;
+}
+
 .javascript-img-container {
-  width: 5rem;
+  width: 7rem;
   align-self: center;
+  position: relative;
+  left: 5rem;
 }
 
 .javascript-img-container>img {
   width: 100%;
 }
 
+.basics-image {
+  position: relative;
+  left: 6rem;
+  top: -3rem;
+}
+
 .competency-description {
   width: 67vw;
   margin-right: 1rem;
-  margin-top: 4rem;
 }
 
 .competency-description>p {
   width: 95%;
+  margin-bottom: 2rem;
 }
 
 
