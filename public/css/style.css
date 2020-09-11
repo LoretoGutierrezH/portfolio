@@ -537,6 +537,10 @@ hr {
     margin-top: -14rem;
   }
 
+  .about-cta > p {
+    width: 35%;
+  }
+
   .greeting1 {
     font-size: 5rem;
   }
@@ -592,11 +596,11 @@ hr {
   }
 
   .about > section > p:nth-child(4) {
-    top: 78rem;
-    left: 44rem;
+    top: 76rem;
+    left: 50rem;
   }
 
-  .about > section > p:last-child {
+  .about > section > p:nth-child(5) {
     top: 92rem;
     left: 60rem;
   }

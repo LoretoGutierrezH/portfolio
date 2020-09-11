@@ -3,6 +3,8 @@ const viewPortWidth = document.documentElement.clientWidth;
 const desktopSVG = document.querySelector('#desktop-svg');
 const mobileSVG = document.querySelector('#mobile-svg');
 const imageContainer = document.querySelectorAll('.javascript-img-container');
+const introParagraph = document.querySelector('#intro-paragraph');
+const respaldo = "Tengo una actitud positiva frente a la vida, un enfoque práctico hacia los problemas y mi superpoder es el aprendizaje autodidacta..<br><br>Me encantan la naturaleza y los animales, especialmente los perros. Soy adicta al ceviche, y el café es mi compañero fiel durante las horas de codeo..<br><br>Fuera de la programación, tengo muchos otros intereses que intento abordar en mi tiempo libre y que también requieren de mi capacidad de aprendizaje. Creo en la educación como una herramienta para el desarrollo personal y profesional y un medio para acortar brechas de todo tipo."
 
 if (viewPortWidth > 425) {
   desktopSVG.classList.replace('hidden', 'active-svg');
@@ -139,7 +141,7 @@ extraInfoCircle.addEventListener('click', () => {
     container.textContent = "";
   })
   extraDescription.textContent = "";
-  extraDescription.textContent = "Información extra sobre mí";
+  extraDescription.textContent = "Me encantan la naturaleza y los animales, especialmente los perros. Soy adicta al ceviche, y el café es mi compañero fiel durante las horas de codeo. Fuera de la programación, tengo muchos otros intereses que intento abordar en mi tiempo libre y que también requieren de mi capacidad de aprendizaje. Creo en la educación como una herramienta para el desarrollo personal y profesional y un medio para acortar brechas de todo tipo.";
 })
 
 // SKILLS NAVBAR AND CONTENT
