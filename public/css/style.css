@@ -326,6 +326,14 @@ h3.skills-heading {
   margin: 1rem 0;
 }
 
+.active-skill {
+  background-color: blue;
+}
+
+.inactive-skill {
+  background-color: black;
+}
+
 .skill-description {
   margin-top: 1rem;
   max-width: 27rem;
@@ -562,12 +570,35 @@ hr {
   }
 
   .about>section>p {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     margin: 0 4rem;
     position: absolute;
-    top: 58rem;
-    left: 60rem;
     width: 31%;
+  }
+
+  .about > section > p:first-child {
+    top: 34rem;
+    left: 60rem;
+  }
+
+  .about > section > p:nth-child(2) {
+    top: 51rem;
+    left: 64rem;
+  }
+
+  .about > section > p:nth-child(3) {
+    top: 64rem;
+    left: 38rem;
+  }
+
+  .about > section > p:nth-child(4) {
+    top: 78rem;
+    left: 44rem;
+  }
+
+  .about > section > p:last-child {
+    top: 92rem;
+    left: 60rem;
   }
 
   svg {
@@ -605,6 +636,10 @@ hr {
     margin-left: -6rem;
   }
 
+  .skills-outline > ul > li {
+    padding: 1rem;
+  }
+  
   .skill-description {
     margin-left: 8rem;
     margin-top: 4rem;
