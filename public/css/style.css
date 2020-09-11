@@ -366,6 +366,14 @@ h3.skills-heading {
   margin-bottom: 2rem;
 }
 
+.portfolio-link {
+  font-size: 1.5rem;
+  text-align: center
+}
+.portfolio-link > a {
+  text-decoration: none;
+  color: blue;
+}
 
 
 /* CONTACT FORM */
@@ -633,6 +641,7 @@ hr {
 
   .skills-content {
     font-size: 1.5rem;
+    min-height: 56rem;
   }
 
   .skills-outline > ul {
@@ -642,11 +651,12 @@ hr {
 
   .skills-outline > ul > li {
     padding: 1rem;
+    margin: 0;
   }
   
   .skill-description {
     margin-left: 8rem;
-    margin-top: 4rem;
+    margin-top: 2rem;
     max-width: 50vw;
   }
 
