@@ -125,16 +125,17 @@ header {
 .about-cta {
   background-color: white;
   height: 29vh;
-  width: 100%;
+  /* width: 127%; */
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  margin-top: -21rem;
+  /* margin-top: -21rem; */
   text-align: center;
+  position: relative;
+  top: 22rem;
 }
 
 .about-cta>p {
-  width: 59%;
   font-size: 1.8rem;
   color: grey;
   z-index: 800;
@@ -307,7 +308,7 @@ h3.skills-heading {
 
 .skills-content>div {
   position: absolute;
-  width: 75vw;
+  width: 74vw;
 }
 
 .skills-content>div>ul {
@@ -368,7 +369,8 @@ h3.skills-heading {
 
 .portfolio-link {
   font-size: 1.5rem;
-  text-align: center
+  text-align: center;
+  margin-top: 8rem;
 }
 .portfolio-link > a {
   text-decoration: none;
@@ -452,7 +454,12 @@ footer i:hover {
   margin-top: 1rem;
 }
 
-.professional-links>i {
+.professional-links > a {
+  text-decoration: none;
+  color: white;
+}
+
+.professional-links > a > i {
   font-size: 3rem;
 }
 
@@ -519,6 +526,80 @@ hr {
 
 /* MEDIA QUERIES */
 
+
+
+@media (min-width: 768px) {
+  .up-sticky-nav {
+    font-size: 1.2rem;
+  }
+
+  .up-sticky-nav > p {
+    padding: 1.7rem 1rem;
+  }
+
+  .profile-pic {
+    left: 42%;
+  }
+
+  .about-cta > p {
+    width: 45%;
+  }
+
+  .about > h3 {
+    margin-top: 22rem;
+    margin-bottom: 7rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .about > section > p {
+    font-size: 1.5rem;
+    width: 33%;
+  }
+
+  .about > section > p:first-child {
+    top: 35rem;
+    left: 49rem;
+  }
+
+  .about > section > p:nth-child(2) {
+    top: 55rem;
+    left: 49rem;
+  }
+
+  .about > section > p:nth-child(3) {
+    top: 66rem;
+    left: 29rem;
+  }
+
+  .about > section > p:nth-child(4) {
+    top: 76rem;
+    left: 36rem;
+  }
+
+  .about > section > p:nth-child(5) {
+    top: 90rem;
+    left: 45rem;
+  }
+
+  .skills {
+    font-size: 1.2rem;
+  }
+
+  .skills-navbar {
+    left: 5rem;
+  }
+
+  .skills-content {
+    left: 11rem;
+    margin-bottom: 11rem;
+  }
+
+  .card {
+    width: 65vw;
+  }
+}
+
 @media (min-width: 1065px) {
   hr {
     width: 83vw;
@@ -543,6 +624,7 @@ hr {
 
   .about-cta {
     margin-top: -14rem;
+    top: 46rem;
   }
 
   .about-cta > p {
