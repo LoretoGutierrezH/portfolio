@@ -418,6 +418,9 @@ h3.skills-heading {
   color: white;
 }
 
+#contact-form-client > textarea {
+  resize: none;
+}
 form>h3 {
   font-size: 1.7rem;
 }
@@ -815,6 +818,32 @@ hr {
     background-color: #F7F0E9;
   }
 
+  #contact {
+    height: 54rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+  }
+
+  #contact > form > input {
+    width: 49rem;
+    margin: 2rem 0;
+    padding: 1rem;
+  }
+
+  #contact-form-client {
+    height: 40rem;
+  }
+
+  #contact-form-client > textarea {
+    font-family: 'Montserrat',
+    sans-serif;
+    width: 49rem;
+    height: 45rem;
+    resize: none;
+  }
 
   #contact-form>h1 {
     font-size: 1.7rem;
