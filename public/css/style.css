@@ -603,7 +603,7 @@ hr {
   }
 }
 
-@media (min-width: 1065px) {
+@media (min-width: 1024px) {
   hr {
     width: 83vw;
     margin: 0 auto;
@@ -654,7 +654,7 @@ hr {
   }
 
   .about {
-    background: linear-gradient(185deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 11%, rgba(0, 0, 0, 1) 11.2%);
+    background: linear-gradient(188deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 11%, rgba(0, 0, 0, 1) 11.2%);
   }
 
   .about > h3 {
