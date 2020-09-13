@@ -15,10 +15,12 @@ html {
 
 #root {
   min-height: 100vh;
-  background-color: white;
+  background-color: black;
   width: 100vw;
 
 }
+
+
 
 
 .up-sticky-nav {
@@ -70,7 +72,7 @@ header {
   /* clip-path: polygon(-30% 0%, 100% -1%, 100% 100%, 114% 111%); */
   padding: 4rem;
   background: rgb(0, 0, 0);
-  background: linear-gradient(189deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 46%, rgba(255, 255, 255, 1) 46.2%);
+  background: linear-gradient(193deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 46%, rgba(255, 255, 255, 1) 46.2%);
   margin-top: 6rem;
   width: 100vw;
   position: relative;
@@ -124,7 +126,7 @@ header {
 
 .about-cta {
   background-color: white;
-  height: 29vh;
+  /* height: 29vh; */
   /* width: 127%; */
   display: flex;
   flex-flow: column wrap;
@@ -148,6 +150,7 @@ header {
   position: relative;
   text-align: center;
   background: linear-gradient(189deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 11%, rgba(0, 0, 0, 1) 11.2%);
+  margin-top: -6rem;
 }
 
 .about>h3 {
@@ -528,7 +531,26 @@ hr {
 }
 
 /* MEDIA QUERIES */
+ 
+@media (max-width: 320px) {
+  .up-sticky-nav, header, .about, #root, .contact, footer {
+    width: 108vw;
+  }
 
+  .greeting1 {
+    font-size: 2.5rem;
+  }
+
+  .greeting2 {
+    font-size: 1.5rem;
+  }
+
+  header {
+    background: linear-gradient(192deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 46%, rgba(255, 255, 255, 1) 46.2%);
+  }
+
+
+}
 
 
 @media (min-width: 768px) {
@@ -675,12 +697,14 @@ hr {
 
   .about > section > p:first-child {
     top: 34rem;
-    left: 60rem;
+    left: 64rem;
+    width: 25%;
   }
 
   .about > section > p:nth-child(2) {
     top: 51rem;
-    left: 64rem;
+    left: 61rem;
+    margin-right: 0;
   }
 
   .about > section > p:nth-child(3) {
@@ -696,6 +720,7 @@ hr {
   .about > section > p:nth-child(5) {
     top: 92rem;
     left: 60rem;
+    margin-right: 0;
   }
 
   svg {
@@ -722,6 +747,7 @@ hr {
   .skills-navbar {
     width: 76vw;
     font-size: 1.5rem;
+    margin-left: -3rem;
   }
 
 
@@ -740,8 +766,22 @@ hr {
   .skills-content {
     font-size: 1.5rem;
     min-height: 56rem;
+    margin-left: -5rem;
   }
 
+  .skills-content > div {
+    position: absolute;
+    width: 67vw;
+  }
+
+  .skills-outline {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 1rem;
+    margin-right: 10rem;
+    width: 54vw;
+  }
+  
   .skills-outline > ul {
     min-height: 18rem;
     margin-left: -6rem;
@@ -753,7 +793,7 @@ hr {
   }
   
   .skill-description {
-    margin-left: 8rem;
+    margin-left: -1rem;
     margin-top: 2rem;
     max-width: 50vw;
   }
@@ -847,5 +887,61 @@ hr {
 
   #contact-form>h1 {
     font-size: 1.7rem;
+  }
+
+  .contact {
+    background-color: black;
+    min-height: 56vh;
+    margin-top: -1rem;
+    width: 100vw;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .up-sticky-nav {
+    font-size: 2rem;
+  }
+
+  .about-cta {
+    width: 71vw;
+    position: relative;
+    top: 55rem;
+    left: 18rem;
+  }
+
+  .about-cta > p {
+    font-size: 3rem;
+    width: 39%;
+  }
+
+  .introduction {
+    width: 71vw;
+    position: relative;
+    top: 55rem;
+    left: 18rem;
+  }
+
+  .greeting1 {
+    position: relative;
+    top: -42rem;
+  }
+
+  .greeting2 {
+    font-size: 3rem;
+    position: relative;
+    top: -45rem;
+  }
+
+  .about {
+    background: linear-gradient(184deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 8%, rgba(0, 0, 0, 1) 8.2%);
+  }
+
+  .about > h3 {
+    font-size: 2.5rem;
+  }
+
+  .about > section > p {
+    font-size: 2.5rem;
   }
 }
