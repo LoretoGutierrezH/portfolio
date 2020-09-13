@@ -5,9 +5,9 @@ const mobileSVG = document.querySelector('#mobile-svg');
 const imageContainer = document.querySelectorAll('.javascript-img-container');
 const extraDescription = document.querySelector('#extra-description');
 
-  console.log(viewPortWidth);
+console.log('hola', viewPortWidth);
 
-if (viewPortWidth > 1024) {
+if (viewPortWidth > 1400) {
   desktopSVG.classList.replace('hidden', 'active-svg');
   mobileSVG.classList.add('hidden');
   extraDescription.classList.add('hidden');
@@ -31,9 +31,9 @@ if (viewPortWidth > 1024) {
   imageContainer.forEach(img => {
     img.style.width = "18rem";
   })
-} else {
+} else if (viewPortWidth < 425) {
   desktopSVG.classList.replace('active-svg', 'hidden');
-  extraDescription.remove('hidden');
+  extraDescription.classList.remove('hidden');
   mobileSVG.classList.replace('hidden', 'active-svg');
   imageContainer.forEach(img => {
     img.style.width = "7rem";

@@ -648,7 +648,7 @@ hr {
 
   .about-cta {
     margin-top: -14rem;
-    top: 46rem;
+    top: 36rem;
   }
 
   .about-cta > p {
@@ -905,7 +905,7 @@ hr {
   .about-cta {
     width: 71vw;
     position: relative;
-    top: 55rem;
+    top: 42rem;
     left: 18rem;
   }
 
@@ -923,13 +923,13 @@ hr {
 
   .greeting1 {
     position: relative;
-    top: -42rem;
+    top: -51rem;
   }
 
   .greeting2 {
     font-size: 3rem;
     position: relative;
-    top: -45rem;
+    top: -55rem;
   }
 
   .about {
@@ -1004,5 +1004,10 @@ hr {
     font-size: 2rem;
   }
 
-  
+}
+
+@media (min-width: 2560px) {
+  .about-cta {
+    top: 68rem;
+  }
 }
