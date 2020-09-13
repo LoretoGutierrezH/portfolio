@@ -13,10 +13,10 @@ html {
   color: white;
 }
 
+
 #root {
   min-height: 100vh;
   background-color: black;
-  width: 100vw;
 
 }
 
@@ -25,7 +25,7 @@ html {
   display: flex;
   position: fixed;
   z-index: 1000;
-  width: 100vw;
+  width: 100%;
   margin-top: -6rem;
   height: 9vh;
   align-items: center;
@@ -72,7 +72,7 @@ header {
   background: rgb(0, 0, 0);
   background: linear-gradient(189deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 46%, rgba(255, 255, 255, 1) 46.2%);
   margin-top: 6rem;
-  width: 100vw;
+  width: 100%;
   position: relative;
   top: -5rem;
 }
@@ -148,6 +148,7 @@ header {
   position: relative;
   text-align: center;
   background: linear-gradient(189deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 11%, rgba(0, 0, 0, 1) 11.2%);
+  margin-top: -6rem;
 }
 
 .about>h3 {
@@ -199,7 +200,7 @@ header {
 }
 
 .card {
-  width: 80vw;
+  width: 80%;
   margin: 1rem;
   display: flex;
   justify-content: center;
@@ -255,7 +256,7 @@ h3.skills-heading {
   height: 3rem;
   background-color: grey;
   align-items: center;
-  width: 86vw;
+  width: 86%;
   justify-content: space-between;
   font-weight: bold;
 }
@@ -299,7 +300,7 @@ h3.skills-heading {
 }
 
 .skills-content {
-  width: 75vw;
+  width: 75%;
   position: relative;
   left: 2rem;
   min-height: 42rem;
@@ -308,7 +309,7 @@ h3.skills-heading {
 
 .skills-content>div {
   position: absolute;
-  width: 74vw;
+  width: 74%;
 }
 
 .skills-content>div>ul {
@@ -358,7 +359,7 @@ h3.skills-heading {
 }
 
 .competency-description {
-  width: 67vw;
+  width: 114%;
   margin-right: 1rem;
 }
 
@@ -370,7 +371,7 @@ h3.skills-heading {
 .portfolio-link {
   font-size: 1.5rem;
   text-align: center;
-  margin-top: 8rem;
+  margin-top: 15rem;
 }
 .portfolio-link > a {
   text-decoration: none;
@@ -383,7 +384,7 @@ h3.skills-heading {
   background-color: black;
   min-height: 56vh;
   margin-top: 6rem;
-  width: 100vw;
+  width: 100%;
   padding-bottom: 2rem;
 
 }
@@ -426,7 +427,7 @@ form>h3 {
 }
 
 .form-action-message {
-  width: 50vw;
+  width: 50%;
   text-align: center;
   margin: 0 auto;
   font-size: 1.3rem;
@@ -442,7 +443,7 @@ footer {
   font-size: 1.5rem;
   align-items: center;
   margin-top: 0rem;
-  width: 100vw;
+  width: 100%;
 }
 
 footer i {
@@ -495,7 +496,7 @@ footer i:hover {
 /* ACCESORIES */
 
 hr {
-  width: 92vw;
+  width: 92%;
   margin: 0 auto;
 }
 
@@ -599,13 +600,13 @@ hr {
   }
 
   .card {
-    width: 65vw;
+    width: 65%;
   }
 }
 
 @media (min-width: 1024px) {
   hr {
-    width: 83vw;
+    width: 83%;
     margin: 0 auto;
   }
 
@@ -617,7 +618,7 @@ hr {
     display: flex;
     list-style: none;
     justify-content: space-evenly;
-    width: 100vw;
+    width: 100%;
   }
 
   header {
@@ -719,11 +720,11 @@ hr {
     margin-bottom: 9rem;
     text-align: center;
     font-size: 1.7rem;
-    width: 90vw;
+    width: 90%;
   }
 
   .skills-navbar {
-    width: 76vw;
+    width: 76%;
     font-size: 1.5rem;
     margin-left: -3rem;
   }
@@ -749,7 +750,7 @@ hr {
 
   .skills-content > div {
     position: absolute;
-    width: 67vw;
+    width: 67%;
   }
 
   .skills-outline {
@@ -757,7 +758,7 @@ hr {
     justify-content: space-around;
     margin-left: 1rem;
     margin-right: 10rem;
-    width: 54vw;
+    width: 54%;
   }
   
   .skills-outline > ul {
@@ -773,7 +774,7 @@ hr {
   .skill-description {
     margin-left: -1rem;
     margin-top: 2rem;
-    max-width: 50vw;
+    max-width: 50%;
   }
 
   
@@ -804,7 +805,7 @@ hr {
   }
 
   .card {
-    width: 20vw;
+    width: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -871,7 +872,7 @@ hr {
     background-color: black;
     min-height: 56vh;
     margin-top: -1rem;
-    width: 100vw;
+    width: 100%;
     padding-bottom: 2rem;
   }
 }
@@ -882,7 +883,7 @@ hr {
   }
 
   .about-cta {
-    width: 71vw;
+    width: 71%;
     position: relative;
     top: 55rem;
     left: 18rem;
@@ -894,7 +895,7 @@ hr {
   }
 
   .introduction {
-    width: 71vw;
+    width: 71%;
     position: relative;
     top: 55rem;
     left: 18rem;

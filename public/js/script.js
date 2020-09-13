@@ -3,17 +3,37 @@ const viewPortWidth = document.documentElement.clientWidth;
 const desktopSVG = document.querySelector('#desktop-svg');
 const mobileSVG = document.querySelector('#mobile-svg');
 const imageContainer = document.querySelectorAll('.javascript-img-container');
-const introParagraph = document.querySelector('#intro-paragraph');
-const respaldo = "Tengo una actitud positiva frente a la vida, un enfoque práctico hacia los problemas y mi superpoder es el aprendizaje autodidacta..<br><br>Me encantan la naturaleza y los animales, especialmente los perros. Soy adicta al ceviche, y el café es mi compañero fiel durante las horas de codeo..<br><br>Fuera de la programación, tengo muchos otros intereses que intento abordar en mi tiempo libre y que también requieren de mi capacidad de aprendizaje. Creo en la educación como una herramienta para el desarrollo personal y profesional y un medio para acortar brechas de todo tipo."
+const extraDescription = document.querySelector('#extra-description');
 
-if (viewPortWidth > 425) {
+  console.log(viewPortWidth);
+
+if (viewPortWidth > 1024) {
   desktopSVG.classList.replace('hidden', 'active-svg');
   mobileSVG.classList.add('hidden');
+  extraDescription.classList.add('hidden');
+  imageContainer.forEach(img => {
+    img.style.width = "18rem";
+  })
+  desktopSVG.height.baseVal.valueAsString = '383mm';
+  desktopSVG.width.baseVal.valueAsString = '230mm';
+  console.log(desktopSVG.width.baseVal.valueAsString)
+} else if (viewPortWidth > 768) {
+  desktopSVG.classList.replace('hidden', 'active-svg');
+  mobileSVG.classList.add('hidden');
+  extraDescription.classList.add('hidden');
+  imageContainer.forEach(img => {
+    img.style.width = "18rem";
+  })
+} else if (viewPortWidth > 425) {
+  desktopSVG.classList.replace('hidden', 'active-svg');
+  mobileSVG.classList.add('hidden');
+  extraDescription.classList.add('hidden');
   imageContainer.forEach(img => {
     img.style.width = "18rem";
   })
 } else {
   desktopSVG.classList.replace('active-svg', 'hidden');
+  extraDescription.remove('hidden');
   mobileSVG.classList.replace('hidden', 'active-svg');
   imageContainer.forEach(img => {
     img.style.width = "7rem";
@@ -32,7 +52,6 @@ const rorDescription = document.querySelector('#ror-description');
 const udemyDescription = document.querySelector('#udemy-description');
 const laboratoriaDescription = document.querySelector('#laboratoria-description');
 const frontEndDescription = document.querySelector('#front-end-description');
-const extraDescription = document.querySelector('#extra-description');
 
 
 
@@ -141,7 +160,7 @@ extraInfoCircle.addEventListener('click', () => {
     container.textContent = "";
   })
   extraDescription.textContent = "";
-  extraDescription.textContent = "Me encantan la naturaleza y los animales, especialmente los perros. Soy adicta al ceviche, y el café es mi compañero fiel durante las horas de codeo. Fuera de la programación, tengo muchos otros intereses que intento abordar en mi tiempo libre y que también requieren de mi capacidad de aprendizaje. Creo en la educación como una herramienta para el desarrollo personal y profesional y un medio para acortar brechas de todo tipo.";
+  extraDescription.textContent = "Me encantan la naturaleza y los animales, especialmente los perros. Soy adicta al ceviche, y el café es mi compañero fiel durante las horas de codeo.";
 })
 
 // SKILLS NAVBAR AND CONTENT

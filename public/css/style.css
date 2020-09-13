@@ -16,7 +16,6 @@ html {
 #root {
   min-height: 100vh;
   background-color: black;
-  width: 100vw;
 
 }
 
@@ -27,7 +26,7 @@ html {
   display: flex;
   position: fixed;
   z-index: 1000;
-  width: 100vw;
+  width: 100%;
   margin-top: -6rem;
   height: 9vh;
   align-items: center;
@@ -74,7 +73,7 @@ header {
   background: rgb(0, 0, 0);
   background: linear-gradient(193deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 46%, rgba(255, 255, 255, 1) 46.2%);
   margin-top: 6rem;
-  width: 100vw;
+  width: 100%;
   position: relative;
   top: -5rem;
 }
@@ -386,7 +385,7 @@ h3.skills-heading {
   background-color: black;
   min-height: 56vh;
   margin-top: 6rem;
-  width: 100vw;
+  width: 100%;
   padding-bottom: 2rem;
 
 }
@@ -445,7 +444,7 @@ footer {
   font-size: 1.5rem;
   align-items: center;
   margin-top: 0rem;
-  width: 100vw;
+  width: 100%;
 }
 
 footer i {
@@ -643,7 +642,7 @@ hr {
   }
 
   header {
-    background: linear-gradient(189deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 55%, rgba(255, 255, 255, 1) 55.2%);
+    background: linear-gradient(186deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 55%, rgba(255, 255, 255, 1) 55.2%);
   }
   
 
@@ -676,7 +675,7 @@ hr {
   }
 
   .about {
-    background: linear-gradient(188deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 11%, rgba(0, 0, 0, 1) 11.2%);
+    background: linear-gradient(186deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 11%, rgba(0, 0, 0, 1) 11.2%);
   }
 
   .about > h3 {
@@ -893,7 +892,7 @@ hr {
     background-color: black;
     min-height: 56vh;
     margin-top: -1rem;
-    width: 100vw;
+    width: 100%;
     padding-bottom: 2rem;
   }
 }
@@ -934,14 +933,76 @@ hr {
   }
 
   .about {
-    background: linear-gradient(184deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 8%, rgba(0, 0, 0, 1) 8.2%);
+    background: linear-gradient(184deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 17%, rgba(0, 0, 0, 1) 17.2%);
+
   }
 
   .about > h3 {
     font-size: 2.5rem;
+    margin-top: 39rem;
   }
 
   .about > section > p {
     font-size: 2.5rem;
   }
+
+  .about > section > p:first-child {
+    top: 61rem;
+    left: 82rem;
+    width: 31%;
+  }
+
+  .about > section > p:nth-child(2) {
+    top: 86rem;
+    left: 86rem;
+  }
+
+  .about > section > p:nth-child(3) {
+    top: 105rem;
+    left: 50rem;
+  }
+
+  .about > section > p:nth-child(4) {
+    top: 124rem;
+    left: 60rem;
+  }
+
+  .about > section > p:nth-child(5) {
+    top: 144rem;
+    left: 78rem;
+  }
+
+  h3.skills-heading {
+    font-size: 2.7rem;
+  }
+
+  .skills-navbar {
+    font-size: 2rem;
+  }
+
+  .skills-content {
+    font-size: 2rem;
+  }
+
+  .portfolio-link {
+    font-size: 2.5rem;
+  }
+
+  .work-content-intro > h3 {
+    font-size: 2.7rem;
+  }
+
+  form > h3 {
+    font-size: 2.7rem;
+  }
+
+  form > input, form > textarea, form > button {
+    font-size: 2rem;
+  }
+
+  footer {
+    font-size: 2rem;
+  }
+
+  
 }
