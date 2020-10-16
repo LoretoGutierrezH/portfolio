@@ -36,7 +36,7 @@ html {
 
 }
 .up-sticky-nav>p {
-  padding: 1.8rem 1rem;
+  padding: 1.5rem 1rem;
   margin: 0 -3rem;
 }
 
@@ -71,7 +71,7 @@ header {
   /* clip-path: polygon(-30% 0%, 100% -1%, 100% 100%, 114% 111%); */
   padding: 4rem;
   background: rgb(0, 0, 0);
-  background: linear-gradient(193deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 46%, rgba(255, 255, 255, 1) 46.2%);
+  /* background: linear-gradient(193deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 46%, rgba(255, 255, 255, 1) 46.2%); */
   margin-top: 6rem;
   width: 100%;
   position: relative;
@@ -124,7 +124,6 @@ header {
 /* MAIN CONTENT */
 
 .about-cta {
-  background-color: white;
   /* height: 29vh; */
   /* width: 127%; */
   display: flex;
@@ -148,7 +147,7 @@ header {
   min-height: 80vh;
   position: relative;
   text-align: center;
-  background: linear-gradient(189deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 11%, rgba(0, 0, 0, 1) 11.2%);
+ /*  background: linear-gradient(189deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 11%, rgba(0, 0, 0, 1) 11.2%); */
   margin-top: -6rem;
 }
 
@@ -161,18 +160,14 @@ header {
 }
 
 .about>section>p {
-  font-size: 1.1rem;
-  /* margin: 0 4rem; */
-  position: absolute;
-  top: 35rem;
-  left: 14rem;
-  padding: 1rem;
-  height: 16rem;
-  width: 19rem;
-}
-
-#mobile-svg {
-  margin-left: -2rem;
+      font-size: 1.3rem;
+      /* margin: 0 4rem; */
+      position: absolute;
+      top: 35rem;
+      left: 16rem;
+      padding: 1rem;
+      height: 16rem;
+      width: 19rem;
 }
 
 .svg-text {
@@ -236,6 +231,7 @@ header {
   margin-bottom: 2rem;
   position: relative;
   min-height: 20rem;
+  font-size: 1.3rem;
 }
 
 hr#skills {
@@ -340,6 +336,7 @@ h3.skills-heading {
 .skill-description {
   margin-top: 1rem;
   max-width: 27rem;
+  font-size: 1.3rem;
 }
 
 .javascript-img-container {
@@ -370,9 +367,9 @@ h3.skills-heading {
 }
 
 .portfolio-link {
-  font-size: 1.5rem;
-  text-align: center;
-  margin-top: 8rem;
+      font-size: 1.5rem;
+      text-align: center;
+      margin-top: 23rem;
 }
 .portfolio-link > a {
   text-decoration: none;
@@ -532,8 +529,14 @@ hr {
 /* MEDIA QUERIES */
  
 @media (max-width: 320px) {
-  .up-sticky-nav, header, .about, #root, .contact, footer {
+  /* .up-sticky-nav, header, .about, #root, .contact, footer {
     width: 108vw;
+  } */
+  #root {
+    width: 100%;
+  }
+  .up-sticky-nav {
+    width: 99%;
   }
 
   .greeting1 {
@@ -544,10 +547,15 @@ hr {
     font-size: 1.5rem;
   }
 
-  header {
-    background: linear-gradient(192deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 46%, rgba(255, 255, 255, 1) 46.2%);
+
+
+  .about > section > p {
+    width: 15rem;
   }
 
+  .contact form input, .contact textarea {
+    width: 24rem;
+  }
 
 }
 
@@ -561,8 +569,17 @@ hr {
     padding: 1.7rem 1rem;
   }
 
+  .introduction {
+    margin-top: 5rem;
+  }
+
   .profile-pic {
     left: 42%;
+    top: 47%;
+  }
+
+  .about-cta {
+    top: 21rem;
   }
 
   .about-cta > p {
@@ -579,35 +596,12 @@ hr {
   .about > section > p {
     font-size: 1.5rem;
     width: 33%;
-  }
-
-  .about > section > p:first-child {
     top: 35rem;
-    left: 49rem;
-  }
-
-  .about > section > p:nth-child(2) {
-    top: 55rem;
-    left: 49rem;
-  }
-
-  .about > section > p:nth-child(3) {
-    top: 66rem;
-    left: 29rem;
-  }
-
-  .about > section > p:nth-child(4) {
-    top: 76rem;
-    left: 36rem;
-  }
-
-  .about > section > p:nth-child(5) {
-    top: 90rem;
-    left: 45rem;
+    left: 41rem;
   }
 
   .skills {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
 
   .skills-navbar {
@@ -615,12 +609,20 @@ hr {
   }
 
   .skills-content {
-    left: 11rem;
+    left: 8rem;
     margin-bottom: 11rem;
+  }
+
+  .skill-description {
+    max-width: 53rem;
   }
 
   .card {
     width: 65vw;
+  }
+
+  svg {
+    margin-left: 8rem;
   }
 }
 
@@ -641,14 +643,12 @@ hr {
     width: 100vw;
   }
 
-  header {
-    background: linear-gradient(186deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 55%, rgba(255, 255, 255, 1) 55.2%);
-  }
-  
+
 
   .about-cta {
     margin-top: -14rem;
-    top: 46rem;
+    top: 37rem;
+    background-color: transparent;
   }
 
   .about-cta > p {
@@ -663,20 +663,22 @@ hr {
     font-size: 3rem;
   }
 
+  .introduction {
+    margin-top: 1rem;
+  }
+
   .profile-pic {
     width: 17rem;
     position: absolute;
     /* transform: translateX(144%); */
-    left: 43%;
-    top: 42%;
+    left: 41%;
+    top: 22rem;
     border-radius: 50%;
     background-color: white;
 
   }
 
-  .about {
-    background: linear-gradient(186deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 11%, rgba(0, 0, 0, 1) 11.2%);
-  }
+  
 
   .about > h3 {
     margin: 0 auto;
@@ -692,36 +694,12 @@ hr {
     margin: 0 4rem;
     position: absolute;
     width: 31%;
-  }
-
-  .about > section > p:first-child {
     top: 34rem;
-    left: 64rem;
+    left: 50rem;
     width: 25%;
   }
 
-  .about > section > p:nth-child(2) {
-    top: 51rem;
-    left: 61rem;
-    margin-right: 0;
-  }
-
-  .about > section > p:nth-child(3) {
-    top: 64rem;
-    left: 38rem;
-  }
-
-  .about > section > p:nth-child(4) {
-    top: 76rem;
-    left: 50rem;
-  }
-
-  .about > section > p:nth-child(5) {
-    top: 92rem;
-    left: 60rem;
-    margin-right: 0;
-  }
-
+ 
   svg {
     margin-left: 20rem;
   }
@@ -895,6 +873,36 @@ hr {
     width: 100%;
     padding-bottom: 2rem;
   }
+
+  svg {
+    margin-left: 13rem;
+  }
+}
+
+@media (min-width: 1351px) {
+  .profile-pic {
+    width: 14rem;
+  }
+
+  .greeting1 {
+    font-size: 4rem;
+  }
+
+  .greeting2 {
+    font-size: 3rem;
+  }
+
+  .introduction {
+    margin-top: 5rem;
+  }
+
+  .about-cta {
+    top: 41rem;
+  }
+
+  .skill-description {
+    font-size: 1.5rem;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -905,13 +913,17 @@ hr {
   .about-cta {
     width: 71vw;
     position: relative;
-    top: 55rem;
+    top: 69rem;
     left: 18rem;
   }
 
   .about-cta > p {
-    font-size: 3rem;
+    font-size: 4rem;
     width: 39%;
+  }
+
+  .profile-pic {
+        width: 28rem;
   }
 
   .introduction {
@@ -923,13 +935,14 @@ hr {
 
   .greeting1 {
     position: relative;
-    top: -42rem;
+    top: -51rem;
+    font-size: 8rem;
   }
 
   .greeting2 {
-    font-size: 3rem;
+    font-size: 5rem;
     position: relative;
-    top: -45rem;
+    top: -55rem;
   }
 
   .about {
@@ -944,48 +957,60 @@ hr {
 
   .about > section > p {
     font-size: 2.5rem;
-  }
-
-  .about > section > p:first-child {
-    top: 61rem;
-    left: 82rem;
+    margin: 0 4rem;
+    position: absolute;
     width: 31%;
+    top: 34rem;
+    left: 64rem;
+    width: 25%;
   }
 
-  .about > section > p:nth-child(2) {
-    top: 86rem;
-    left: 86rem;
-  }
-
-  .about > section > p:nth-child(3) {
-    top: 105rem;
-    left: 50rem;
-  }
-
-  .about > section > p:nth-child(4) {
-    top: 124rem;
-    left: 60rem;
-  }
-
-  .about > section > p:nth-child(5) {
-    top: 144rem;
-    left: 78rem;
-  }
 
   h3.skills-heading {
     font-size: 2.7rem;
   }
 
   .skills-navbar {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    height: 5rem;
+    z-index: 1000000;
+  }
+
+  .skills-navbar > p {
+    height: 5rem;
+  }
+
+  .skills-navbar > p:hover {
+    height: 5rem;
   }
 
   .skills-content {
-    font-size: 2rem;
+    font-size: 3.2rem;
+    margin-top: 10rem;
+  }
+
+  .skills-content > div {
+    margin: 0 2rem;
+  }
+
+  .skills-outline {
+        display: flex;
+        justify-content: space-around;
+        margin-left: 9rem;
+        margin-right: 10rem;
+        width: 54vw;
+        margin-top: 8rem;
+  }
+
+  .skill-description {
+    max-width: 62vw;
+    font-size: 3.2rem;
+    margin-top: 8rem;
   }
 
   .portfolio-link {
     font-size: 2.5rem;
+    margin-top: 74rem;
   }
 
   .work-content-intro > h3 {
@@ -1004,5 +1029,10 @@ hr {
     font-size: 2rem;
   }
 
-  
+}
+
+@media (min-width: 2560px) {
+  .about-cta {
+    top: 68rem;
+  }
 }
