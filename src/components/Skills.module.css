@@ -1,0 +1,107 @@
+.skillsNavbar {
+  display: flex;
+  height: 3rem;
+  background-color: grey;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: bold;
+}
+
+.skillsNavbar > p {
+  margin: 0 0rem;
+  height: 3rem;
+  width: 8rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.skillsNavbar>p:first-child {
+  width: 13rem;
+}
+
+.skillsNavbar>p:nth-child(2) {
+  width: 15rem;
+  margin-right: 3rem;
+}
+
+.skillsNavbar>p:last-child {
+  width: 15rem;
+  margin-left: -3rem;
+}
+
+.skillsNavbar>p:hover {
+  background-color: #4F574D;
+  height: 3rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.activeOption {
+  background-color: #4F574D;
+  height: 2rem;
+  width: 8rem;
+  text-align: center;
+}
+
+.skillsContent {
+  width: 75vw;
+  min-height: 42rem;
+  margin: 0 auto;
+}
+
+.strongBasics, .notions, .interest {
+  display: block;
+}
+
+.inactiveOption {
+  display: none;
+}
+
+/* Skill Icons */
+.imagesContainer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+
+.skillIcon {
+  width: 30%;
+}
+
+.skillIcon > img {
+  width: 100%;
+}
+
+.description > ul > li {
+  list-style: none;
+  border: 1px solid white;
+  margin: 1rem 0;
+  padding: 1rem;
+  width: 100%;
+  margin-left: -2rem;
+}
+
+@media (min-width: 1024px) {
+  .skillIcon {
+    width: 11%;
+  }
+
+  .description {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 5rem;
+  }
+
+  .description > ul > li {
+    border: 1px solid white;
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+
+  .description > ul > li > b {
+    margin: 4rem 0;
+  }
+
+} 

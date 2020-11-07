@@ -1,0 +1,41 @@
+.profileImg {
+  width: 27%;
+  border: 3px solid white;
+  border-radius: 137%;
+  margin: 0 auto;
+}
+
+.profileImg > img {
+  width: 100%;
+  border-radius: 137%;
+}
+
+h1 {
+  text-align: center;
+}
+
+.about {
+  width: 85%;
+  margin: 2rem auto;
+}
+
+.about:first-of-type {
+  margin-top: 3rem;
+}
+
+.about:last-of-type {
+  margin-bottom: 3rem;
+}
+
+a.link > img {
+  width: 10%;
+}
+
+@media (min-width: 768px) {
+  .profileImg {
+    width: 12%;
+  }
+  .about {
+    width: 60%;
+  }
+}
